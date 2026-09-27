@@ -63,6 +63,7 @@ Analisis FTK saat ini berbasis angka tunggal (FTK, realisasi, gap) per unit. Bel
 - Unit test pipeline: `ml/.venv/bin/python -m pytest tests/ml`.
 - Setiap eksperimen memiliki ID (`EXP-KM-xxx`, `EXP-HC-xxx`, `EXP-DB-xxx`) dan metadata (PRD §44, §71).
 - Semua angka di dokumen riset berasal dari file output pipeline, bukan dihitung manual.
+- **Code version:** repository git (commit awal `20086f4`, 2026-09-27). Registri eksperimen juga mencatat SHA-256 script (`code_version`, mis. `c4adf2d5834d` untuk `s05_experiments.py`). Untuk reproduksi: checkout commit → `pip install -r ml/requirements.txt` → jalankan pipeline sesuai `docs/deployment/installation.md`.
 
 ## 8. Etika & privasi
 
