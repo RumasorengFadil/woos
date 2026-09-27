@@ -1,0 +1,135 @@
+{
+  "dataset_version": "KP-2026-09-25-v2",
+  "source_sha256": "29b39045161d7cf126b167fcaa29b752196a81d086cb8397c1c7717c78ef1f82",
+  "steps": [
+    {
+      "step": "normalize_whitespace",
+      "decision": "D-015",
+      "cells_changed": 71
+    },
+    {
+      "step": "missing_position_name",
+      "decision": "Dibiarkan NULL + flag (bukan feature model)",
+      "rows": 5
+    },
+    {
+      "step": "grade_mapping",
+      "decision": "PRD §12, §22; D-004; D-013",
+      "unknown": 42,
+      "nonstandard_mapped": 24,
+      "je_mapped": 8
+    },
+    {
+      "step": "marked_position_flag",
+      "decision": "D-005",
+      "rows": 42
+    },
+    {
+      "step": "position_flags",
+      "decision": "D-002, D-003, D-006",
+      "is_active": 3042,
+      "is_dormant": 486,
+      "is_unbudgeted_filled": 172,
+      "is_vacant": 763,
+      "is_over_ftk": 605,
+      "is_extreme_realization": 13
+    },
+    {
+      "step": "possible_duplicate_name_flag",
+      "decision": "D-015 (tidak dihapus, hanya flag)",
+      "rows": 2
+    },
+    {
+      "step": "nonstandard_grade_evidence",
+      "decision": "D-004 (revisi)",
+      "evidence": {
+        "AM": {
+          "title_prefix": "ASSISTANT MANAGER",
+          "standard_labeled_positions": 188,
+          "grade_group_share": {
+            "GENERALIS": 1.0
+          }
+        },
+        "VP": {
+          "title_prefix": "VICE PRESIDENT",
+          "standard_labeled_positions": 276,
+          "grade_group_share": {
+            "MM": 0.996,
+            "GENERALIS": 0.004
+          }
+        }
+      }
+    },
+    {
+      "step": "duplicate_check",
+      "decision": "PRD §22",
+      "duplicate_key": 0,
+      "duplicate_org_position_name": 1,
+      "removed": 0
+    },
+    {
+      "step": "invalid_value_check",
+      "decision": "PRD §22 (FTK<0 / Realisasi<0 = invalid)",
+      "invalid_rows": 0,
+      "removed": 0
+    },
+    {
+      "step": "organization_mapping",
+      "decision": "PRD §22; D-007; D-014",
+      "org_id_attributes_consistent": true,
+      "organizations_with_positions": 1301,
+      "virtual_containers_added": 4,
+      "parent_status": {
+        "DECLARED": 1300,
+        "UNKNOWN": 3,
+        "OUT_OF_SCOPE": 1,
+        "INFERRED_ROOT": 1
+      },
+      "directorate_source": {
+        "HIERARCHY": 1297,
+        "FALLBACK_V1_MEMBERSHIP": 4,
+        "CHILDREN_CONSENSUS": 3,
+        "ROOT": 1
+      }
+    },
+    {
+      "step": "job_mapping",
+      "decision": "PRD §22",
+      "position_id_unique": true,
+      "position_names_with_multiple_grade_groups": 3
+    }
+  ],
+  "validation": {
+    "rows_preserved": true,
+    "ftk_sum_preserved": true,
+    "realization_sum_preserved": true,
+    "no_duplicate_key": true,
+    "no_invalid_value": true,
+    "every_position_has_org": true,
+    "every_declared_parent_resolvable": true,
+    "every_org_has_directorate": true,
+    "grade_group_never_null": true,
+    "all_passed": true
+  },
+  "summary": {
+    "positions": 3528,
+    "organizations_total": 1305,
+    "organizations_with_positions": 1301,
+    "ftk": 3791,
+    "realization": 3607,
+    "directorates": {
+      "DIREKTORAT DISTRIBUSI": 54,
+      "DIREKTORAT KEUANGAN": 147,
+      "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL": 379,
+      "DIREKTORAT MANAJEMEN PEMBANGKITAN": 47,
+      "DIREKTORAT MANAJEMEN PROYEK DAN ENERGI BARU TERBARUKAN": 110,
+      "DIREKTORAT MANAJEMEN RISIKO": 64,
+      "DIREKTORAT PERENCANAAN KORPORAT DAN PENGEMBANGAN BISNIS": 56,
+      "DIREKTORAT RETAIL DAN NIAGA": 72,
+      "DIREKTORAT TEKNOLOGI, ENGINEERING DAN KEBERLANJUTAN": 59,
+      "DIREKTORAT TRANSMISI DAN PERENCANAAN SISTEM": 57,
+      "DIREKTORAT UTAMA": 255,
+      "PT PLN (PERSERO) KANTOR PUSAT": 1
+    }
+  }
+}

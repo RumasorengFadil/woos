@@ -1,0 +1,17 @@
+feature_version,set,transform,d,max_vif,max_vif_feature,hopkins_dedup_mean,unique_vectors
+F1,A,raw,3,2.27,realization,0.829,83.0
+F1,A,log1p,3,9.78,realization,,
+F1,B,raw,6,11.28,realization,0.905,191.0
+F1,B,log1p,6,34.8,realization,,
+F1,C,raw,11,75.89,pct_MM,0.914,281.0
+F1,C,log1p,11,78.35,pct_MM,,
+F1,R,raw,3,3.03,balance_index,0.862,162.0
+F1,R,log1p,3,3.3,balance_index,,
+F2,A,raw,3,2.27,realization,0.829,83.0
+F2,A,log1p,3,9.78,realization,,
+F2,B,raw,5,3.86,position_count,0.893,191.0
+F2,B,log1p,5,11.08,realization,,
+F2,C,raw,9,4.88,position_count,0.918,281.0
+F2,C,log1p,9,11.65,realization,,
+F2,R,raw,3,3.03,balance_index,0.862,162.0
+F2,R,log1p,3,3.3,balance_index,,

@@ -1,0 +1,12 @@
+{
+  "feature_version": "F2",
+  "feature_set": "R",
+  "features": [
+    "balance_index",
+    "vacant_share",
+    "avg_realization_per_position"
+  ],
+  "scaler": "StandardScaler",
+  "unit": "direct",
+  "model_population_rule": "in_model_population = 1 (D-017)"
+}

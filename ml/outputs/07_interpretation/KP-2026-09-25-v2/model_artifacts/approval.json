@@ -1,0 +1,15 @@
+{
+  "experiment_id": "EXP-KM-067",
+  "decision": "D-030",
+  "approved_by": "kustan@fahove.com (pemilik riset / pakar domain)",
+  "approved_on": "2026-09-27",
+  "validation_answers": {
+    "V1_labels": "Setuju — kelima label usulan dipakai",
+    "V2_stable_label": "Setuju — label 'Relatif Stabil' dipertahankan (catatan: berbasis 1 snapshot, D-008)",
+    "V3_directorate_pool_units": "Setuju — cukup ditandai sebagai anggota atipikal (is_atypical_member)",
+    "V4_representative_orgs": "Setuju — contoh representatif sesuai",
+    "V5_unbudgeted_keuangan": "Setuju — pola Terisi Tanpa Formasi di unit verifikasi/pembayaran Keuangan diterima"
+  },
+  "recorded_at": "2026-09-27T01:05:10+00:00",
+  "dataset_version": "KP-2026-09-25-v2"
+}

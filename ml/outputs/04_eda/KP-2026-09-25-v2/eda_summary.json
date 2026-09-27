@@ -1,0 +1,948 @@
+{
+  "dataset_version": "KP-2026-09-25-v2",
+  "n_model_population": 1280,
+  "distribution": {
+    "ftk": {
+      "n": 1280,
+      "mean": 2.9617,
+      "median": 3.0,
+      "std": 2.433,
+      "skew": 5.422,
+      "min": 0.0,
+      "max": 34.0
+    },
+    "realization": {
+      "n": 1280,
+      "mean": 2.818,
+      "median": 3.0,
+      "std": 2.1015,
+      "skew": 1.039,
+      "min": 0.0,
+      "max": 19.0
+    },
+    "gap": {
+      "n": 1280,
+      "mean": 0.1437,
+      "median": 0.0,
+      "std": 2.342,
+      "skew": 6.921,
+      "min": -8.0,
+      "max": 34.0
+    },
+    "fulfillment_ratio": {
+      "n": 1228,
+      "mean": 0.959,
+      "median": 1.0,
+      "std": 0.5438,
+      "skew": 1.951,
+      "min": 0.0,
+      "max": 6.0
+    },
+    "staffing_ratio": {
+      "n": 1228,
+      "mean": -0.041,
+      "median": 0.0,
+      "std": 0.5438,
+      "skew": 1.951,
+      "min": -1.0,
+      "max": 5.0
+    }
+  },
+  "ftk_realization": {
+    "distinct_combinations": 83,
+    "top8_share": 0.6086,
+    "on_diagonal_share": 0.4555,
+    "below_diagonal_share": 0.2961,
+    "above_diagonal_share": 0.2484,
+    "spearman": 0.6504
+  },
+  "gap": {
+    "positive": 379,
+    "zero": 583,
+    "negative": 318,
+    "top_positive": [
+      {
+        "organization_id": "ORG-0138",
+        "organization_name": "BIDANG VERIFIKASI UID & UIW-1",
+        "gap": 34
+      },
+      {
+        "organization_id": "ORG-0139",
+        "organization_name": "BIDANG VERIFIKASI UIP, UIT, PENUNJANG",
+        "gap": 33
+      },
+      {
+        "organization_id": "ORG-0137",
+        "organization_name": "BIDANG VERIFIKASI UID",
+        "gap": 29
+      },
+      {
+        "organization_id": "ORG-0132",
+        "organization_name": "BIDANG PEMBAYARAN TERPUSAT 2",
+        "gap": 25
+      },
+      {
+        "organization_id": "ORG-1075",
+        "organization_name": "HARMONISASI REGULASI KEBIJAKAN SUPPORTING KETENAGALISTRIKAN",
+        "gap": 10
+      }
+    ],
+    "top_negative": [
+      {
+        "organization_id": "ORG-0006",
+        "organization_name": "DIREKTORAT MANAJEMEN PEMBANGKITAN",
+        "gap": -6
+      },
+      {
+        "organization_id": "ORG-0005",
+        "organization_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+        "gap": -6
+      },
+      {
+        "organization_id": "ORG-0734",
+        "organization_name": "SUB BIDANG PENCARIAN DAN KUALIFIKASI VENDOR",
+        "gap": -6
+      },
+      {
+        "organization_id": "ORG-1105",
+        "organization_name": "SUB BIDANG ERP HUMAN CAPITAL AND QUALITY CONTROL",
+        "gap": -6
+      },
+      {
+        "organization_id": "ORG-0003",
+        "organization_name": "DIREKTORAT DISTRIBUSI",
+        "gap": -8
+      }
+    ]
+  },
+  "high_correlation_pairs_spearman_ge_0_7": [
+    [
+      "ftk",
+      "position_count",
+      0.799,
+      0.645
+    ],
+    [
+      "realization",
+      "avg_realization_per_position",
+      0.85,
+      0.799
+    ],
+    [
+      "balance_index",
+      "avg_realization_per_position",
+      0.747,
+      0.645
+    ],
+    [
+      "vacant_position_count",
+      "vacant_share",
+      0.973,
+      0.818
+    ]
+  ],
+  "vif_max_by_set": {
+    "A": {
+      "feature": "realization",
+      "vif": 2.266
+    },
+    "B": {
+      "feature": "realization",
+      "vif": 11.278
+    },
+    "C": {
+      "feature": "pct_MM",
+      "vif": 75.889
+    },
+    "R": {
+      "feature": "balance_index",
+      "vif": 3.031
+    }
+  },
+  "grade_share_overall_active": {
+    "MAK": 0.0013,
+    "MA": 0.021,
+    "MM": 0.0911,
+    "MD": 0.2465,
+    "SPESIALIS": 0.0477,
+    "GENERALIS": 0.5861,
+    "UNKNOWN": 0.0062
+  },
+  "missing": {
+    "raw:position_name": 5,
+    "raw:grade": 42,
+    "feature:fulfillment_ratio": 73,
+    "feature:staffing_ratio": 73
+  },
+  "missing_note": "feature ratio NULL hanya karena FTK = 0 (D-003); feature input model tanpa NaN",
+  "outliers": {
+    "univariate": [
+      {
+        "feature": "ftk",
+        "iqr": 3.0,
+        "n_outside_1_5_iqr": 13,
+        "n_abs_z_gt_3": 8,
+        "max_abs_z": 12.76
+      },
+      {
+        "feature": "realization",
+        "iqr": 3.0,
+        "n_outside_1_5_iqr": 14,
+        "n_abs_z_gt_3": 7,
+        "max_abs_z": 7.7
+      },
+      {
+        "feature": "balance_index",
+        "iqr": 0.1429,
+        "n_outside_1_5_iqr": 289,
+        "n_abs_z_gt_3": 0,
+        "max_abs_z": 2.68
+      },
+      {
+        "feature": "position_count",
+        "iqr": 2.0,
+        "n_outside_1_5_iqr": 3,
+        "n_abs_z_gt_3": 8,
+        "max_abs_z": 9.91
+      },
+      {
+        "feature": "vacant_position_count",
+        "iqr": 1.0,
+        "n_outside_1_5_iqr": 38,
+        "n_abs_z_gt_3": 15,
+        "max_abs_z": 11.72
+      },
+      {
+        "feature": "avg_realization_per_position",
+        "iqr": 0.3333,
+        "n_outside_1_5_iqr": 370,
+        "n_abs_z_gt_3": 18,
+        "max_abs_z": 9.59
+      },
+      {
+        "feature": "vacant_share",
+        "iqr": 0.3333,
+        "n_outside_1_5_iqr": 114,
+        "n_abs_z_gt_3": 0,
+        "max_abs_z": 2.51
+      },
+      {
+        "feature": "pct_MA_MAK",
+        "iqr": 0.0,
+        "n_outside_1_5_iqr": 68,
+        "n_abs_z_gt_3": 27,
+        "max_abs_z": 5.9
+      },
+      {
+        "feature": "pct_MM",
+        "iqr": 0.0,
+        "n_outside_1_5_iqr": 276,
+        "n_abs_z_gt_3": 0,
+        "max_abs_z": 2.13
+      },
+      {
+        "feature": "pct_MD",
+        "iqr": 0.3333,
+        "n_outside_1_5_iqr": 82,
+        "n_abs_z_gt_3": 0,
+        "max_abs_z": 2.88
+      },
+      {
+        "feature": "pct_SPESIALIS",
+        "iqr": 0.0,
+        "n_outside_1_5_iqr": 128,
+        "n_abs_z_gt_3": 74,
+        "max_abs_z": 6.31
+      },
+      {
+        "feature": "pct_GENERALIS",
+        "iqr": 0.6667,
+        "n_outside_1_5_iqr": 0,
+        "n_abs_z_gt_3": 0,
+        "max_abs_z": 1.42
+      }
+    ],
+    "multivariate_setB_chi2_0999_threshold": 22.458,
+    "multivariate_setB_count": 27,
+    "multivariate_setB_top5": [
+      {
+        "organization_id": "ORG-0138",
+        "organization_name": "BIDANG VERIFIKASI UID & UIW-1",
+        "ftk": 34,
+        "realization": 0
+      },
+      {
+        "organization_id": "ORG-0139",
+        "organization_name": "BIDANG VERIFIKASI UIP, UIT, PENUNJANG",
+        "ftk": 34,
+        "realization": 1
+      },
+      {
+        "organization_id": "ORG-0005",
+        "organization_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+        "ftk": 2,
+        "realization": 8
+      },
+      {
+        "organization_id": "ORG-0137",
+        "organization_name": "BIDANG VERIFIKASI UID",
+        "ftk": 30,
+        "realization": 1
+      },
+      {
+        "organization_id": "ORG-0646",
+        "organization_name": "BIDANG LEGAL BUSINESS PARTNER DISTRIBUSI, RETAIL DAN NIAGA",
+        "ftk": 14,
+        "realization": 7
+      }
+    ]
+  },
+  "association": [
+    {
+      "feature": "ftk",
+      "spearman_level": 0.421,
+      "epsilon2_level": 0.305,
+      "p_level": 0.0,
+      "epsilon2_directorate": 0.041,
+      "p_directorate": 0.0
+    },
+    {
+      "feature": "realization",
+      "spearman_level": 0.244,
+      "epsilon2_level": 0.207,
+      "p_level": 0.0,
+      "epsilon2_directorate": 0.104,
+      "p_directorate": 0.0
+    },
+    {
+      "feature": "balance_index",
+      "spearman_level": -0.169,
+      "epsilon2_level": 0.055,
+      "p_level": 0.0,
+      "epsilon2_directorate": 0.064,
+      "p_directorate": 0.0
+    },
+    {
+      "feature": "position_count",
+      "spearman_level": 0.338,
+      "epsilon2_level": 0.306,
+      "p_level": 0.0,
+      "epsilon2_directorate": 0.017,
+      "p_directorate": 0.0246
+    },
+    {
+      "feature": "vacant_position_count",
+      "spearman_level": 0.262,
+      "epsilon2_level": 0.086,
+      "p_level": 0.0,
+      "epsilon2_directorate": 0.072,
+      "p_directorate": 0.0
+    },
+    {
+      "feature": "avg_realization_per_position",
+      "spearman_level": 0.087,
+      "epsilon2_level": 0.093,
+      "p_level": 0.0,
+      "epsilon2_directorate": 0.153,
+      "p_directorate": 0.0
+    },
+    {
+      "feature": "vacant_share",
+      "spearman_level": 0.268,
+      "epsilon2_level": 0.085,
+      "p_level": 0.0,
+      "epsilon2_directorate": 0.093,
+      "p_directorate": 0.0
+    },
+    {
+      "feature": "pct_MA_MAK",
+      "spearman_level": -0.38,
+      "epsilon2_level": 0.544,
+      "p_level": 0.0,
+      "epsilon2_directorate": 0.011,
+      "p_directorate": 0.2187
+    },
+    {
+      "feature": "pct_MM",
+      "spearman_level": -0.491,
+      "epsilon2_level": 0.379,
+      "p_level": 0.0,
+      "epsilon2_directorate": 0.021,
+      "p_directorate": 0.0048
+    },
+    {
+      "feature": "pct_MD",
+      "spearman_level": 0.319,
+      "epsilon2_level": 0.331,
+      "p_level": 0.0,
+      "epsilon2_directorate": 0.007,
+      "p_directorate": 0.6731
+    },
+    {
+      "feature": "pct_SPESIALIS",
+      "spearman_level": -0.261,
+      "epsilon2_level": 0.154,
+      "p_level": 0.0,
+      "epsilon2_directorate": 0.041,
+      "p_directorate": 0.0
+    },
+    {
+      "feature": "pct_GENERALIS",
+      "spearman_level": 0.567,
+      "epsilon2_level": 0.502,
+      "p_level": 0.0,
+      "epsilon2_directorate": 0.03,
+      "p_directorate": 0.0001
+    }
+  ],
+  "scaler_comparison_setC": [
+    {
+      "feature": "ftk",
+      "standard_range": 13.98,
+      "robust_range": 11.333,
+      "standard_max_abs": 12.762,
+      "robust_max_abs": 10.333,
+      "robust_to_standard_range_ratio": 0.811
+    },
+    {
+      "feature": "realization",
+      "standard_range": 9.045,
+      "robust_range": 6.333,
+      "standard_max_abs": 7.703,
+      "robust_max_abs": 5.333,
+      "robust_to_standard_range_ratio": 0.7
+    },
+    {
+      "feature": "balance_index",
+      "standard_range": 5.074,
+      "robust_range": 14.0,
+      "standard_max_abs": 2.68,
+      "robust_max_abs": 7.0,
+      "robust_to_standard_range_ratio": 2.759
+    },
+    {
+      "feature": "position_count",
+      "standard_range": 11.196,
+      "robust_range": 6.0,
+      "standard_max_abs": 9.911,
+      "robust_max_abs": 5.0,
+      "robust_to_standard_range_ratio": 0.536
+    },
+    {
+      "feature": "vacant_position_count",
+      "standard_range": 12.394,
+      "robust_range": 11.0,
+      "standard_max_abs": 11.723,
+      "robust_max_abs": 11.0,
+      "robust_to_standard_range_ratio": 0.888
+    },
+    {
+      "feature": "avg_realization_per_position",
+      "standard_range": 11.205,
+      "robust_range": 24.0,
+      "standard_max_abs": 9.585,
+      "robust_max_abs": 21.0,
+      "robust_to_standard_range_ratio": 2.142
+    },
+    {
+      "feature": "pct_MA_MAK",
+      "standard_range": 6.116,
+      "robust_range": 1.0,
+      "standard_max_abs": 5.898,
+      "robust_max_abs": 1.0,
+      "robust_to_standard_range_ratio": 0.164
+    },
+    {
+      "feature": "pct_MM",
+      "standard_range": 2.632,
+      "robust_range": 1.0,
+      "standard_max_abs": 2.131,
+      "robust_max_abs": 1.0,
+      "robust_to_standard_range_ratio": 0.38
+    },
+    {
+      "feature": "pct_MD",
+      "standard_range": 3.785,
+      "robust_range": 3.0,
+      "standard_max_abs": 2.876,
+      "robust_max_abs": 2.0,
+      "robust_to_standard_range_ratio": 0.793
+    },
+    {
+      "feature": "pct_SPESIALIS",
+      "standard_range": 6.611,
+      "robust_range": 1.0,
+      "standard_max_abs": 6.314,
+      "robust_max_abs": 1.0,
+      "robust_to_standard_range_ratio": 0.151
+    },
+    {
+      "feature": "pct_GENERALIS",
+      "standard_range": 2.763,
+      "robust_range": 1.5,
+      "standard_max_abs": 1.423,
+      "robust_max_abs": 1.0,
+      "robust_to_standard_range_ratio": 0.543
+    }
+  ],
+  "skewness": [
+    {
+      "feature": "ftk",
+      "skew_raw": 5.422,
+      "skew_log1p": -0.159
+    },
+    {
+      "feature": "realization",
+      "skew_raw": 1.039,
+      "skew_log1p": -0.315
+    },
+    {
+      "feature": "balance_index",
+      "skew_raw": -0.398,
+      "skew_log1p": NaN
+    },
+    {
+      "feature": "position_count",
+      "skew_raw": 1.051,
+      "skew_log1p": -0.297
+    },
+    {
+      "feature": "vacant_position_count",
+      "skew_raw": 3.088,
+      "skew_log1p": 0.86
+    },
+    {
+      "feature": "avg_realization_per_position",
+      "skew_raw": 1.83,
+      "skew_log1p": -0.275
+    },
+    {
+      "feature": "vacant_share",
+      "skew_raw": 1.351,
+      "skew_log1p": NaN
+    },
+    {
+      "feature": "pct_MA_MAK",
+      "skew_raw": 4.924,
+      "skew_log1p": NaN
+    },
+    {
+      "feature": "pct_MM",
+      "skew_raw": 1.588,
+      "skew_log1p": NaN
+    },
+    {
+      "feature": "pct_MD",
+      "skew_raw": 1.297,
+      "skew_log1p": NaN
+    },
+    {
+      "feature": "pct_SPESIALIS",
+      "skew_raw": 3.883,
+      "skew_log1p": NaN
+    },
+    {
+      "feature": "pct_GENERALIS",
+      "skew_raw": -0.269,
+      "skew_log1p": NaN
+    }
+  ],
+  "vector_multiplicity": [
+    {
+      "set": "A",
+      "unique_vectors": 83,
+      "largest_group": 278,
+      "top10_share": 0.6594,
+      "share_in_tied": 0.9797
+    },
+    {
+      "set": "B",
+      "unique_vectors": 191,
+      "largest_group": 271,
+      "top10_share": 0.518,
+      "share_in_tied": 0.9273
+    },
+    {
+      "set": "C",
+      "unique_vectors": 281,
+      "largest_group": 198,
+      "top10_share": 0.4078,
+      "share_in_tied": 0.8766
+    },
+    {
+      "set": "R",
+      "unique_vectors": 162,
+      "largest_group": 338,
+      "top10_share": 0.6148,
+      "share_in_tied": 0.9398
+    }
+  ],
+  "hopkins_F1": [
+    {
+      "unit": "direct",
+      "set": "A",
+      "hopkins_all_mean": 0.994,
+      "hopkins_all_sd": 0.004,
+      "hopkins_dedup_mean": 0.829,
+      "hopkins_dedup_sd": 0.052
+    },
+    {
+      "unit": "direct",
+      "set": "B",
+      "hopkins_all_mean": 0.99,
+      "hopkins_all_sd": 0.004,
+      "hopkins_dedup_mean": 0.905,
+      "hopkins_dedup_sd": 0.02
+    },
+    {
+      "unit": "direct",
+      "set": "C",
+      "hopkins_all_mean": 0.985,
+      "hopkins_all_sd": 0.005,
+      "hopkins_dedup_mean": 0.914,
+      "hopkins_dedup_sd": 0.011
+    },
+    {
+      "unit": "direct",
+      "set": "R",
+      "hopkins_all_mean": 0.988,
+      "hopkins_all_sd": 0.004,
+      "hopkins_dedup_mean": 0.862,
+      "hopkins_dedup_sd": 0.027
+    },
+    {
+      "unit": "rollup",
+      "set": "A",
+      "hopkins_all_mean": 0.998,
+      "hopkins_all_sd": 0.005,
+      "hopkins_dedup_mean": 0.975,
+      "hopkins_dedup_sd": 0.035
+    },
+    {
+      "unit": "rollup",
+      "set": "B",
+      "hopkins_all_mean": 0.996,
+      "hopkins_all_sd": 0.004,
+      "hopkins_dedup_mean": 0.988,
+      "hopkins_dedup_sd": 0.011
+    },
+    {
+      "unit": "rollup",
+      "set": "C",
+      "hopkins_all_mean": 0.991,
+      "hopkins_all_sd": 0.004,
+      "hopkins_dedup_mean": 0.974,
+      "hopkins_dedup_sd": 0.009
+    },
+    {
+      "unit": "rollup",
+      "set": "R",
+      "hopkins_all_mean": 0.973,
+      "hopkins_all_sd": 0.005,
+      "hopkins_dedup_mean": 0.909,
+      "hopkins_dedup_sd": 0.013
+    }
+  ],
+  "dlmhc_vs_other": [
+    {
+      "feature": "balance_index",
+      "median_dlmhc": 0.0,
+      "median_other": 0.0,
+      "mean_dlmhc": -0.2075,
+      "mean_other": 0.004,
+      "mannwhitney_p": 7.92006547164376e-13,
+      "rank_biserial": 0.243
+    },
+    {
+      "feature": "vacant_share",
+      "median_dlmhc": 0.3333333333333333,
+      "median_other": 0.0,
+      "mean_dlmhc": 0.3698,
+      "mean_other": 0.1646,
+      "mannwhitney_p": 4.8658358148929347e-23,
+      "rank_biserial": -0.318
+    },
+    {
+      "feature": "avg_realization_per_position",
+      "median_dlmhc": 1.0,
+      "median_other": 1.0,
+      "mean_dlmhc": 0.8314,
+      "mean_other": 1.2867,
+      "mannwhitney_p": 1.0649829166559176e-29,
+      "rank_biserial": 0.387
+    },
+    {
+      "feature": "position_count",
+      "median_dlmhc": 2.0,
+      "median_other": 3.0,
+      "mean_dlmhc": 2.2978,
+      "mean_other": 2.4081,
+      "mannwhitney_p": 0.00702020280018033,
+      "rank_biserial": 0.09
+    }
+  ],
+  "feature_set_candidates": [
+    {
+      "feature_version": "F1",
+      "set": "A",
+      "transform": "raw",
+      "d": 3,
+      "max_vif": 2.27,
+      "max_vif_feature": "realization",
+      "vif": {
+        "ftk": 1.86,
+        "realization": 2.27,
+        "balance_index": 1.84
+      },
+      "hopkins_dedup_mean": 0.829,
+      "unique_vectors": 83
+    },
+    {
+      "feature_version": "F1",
+      "set": "A",
+      "transform": "log1p",
+      "d": 3,
+      "max_vif": 9.78,
+      "max_vif_feature": "realization",
+      "vif": {
+        "ftk": 6.92,
+        "realization": 9.78,
+        "balance_index": 7.66
+      }
+    },
+    {
+      "feature_version": "F1",
+      "set": "B",
+      "transform": "raw",
+      "d": 6,
+      "max_vif": 11.28,
+      "max_vif_feature": "realization",
+      "vif": {
+        "ftk": 2.29,
+        "realization": 11.28,
+        "balance_index": 2.88,
+        "position_count": 7.03,
+        "vacant_position_count": 3.54,
+        "avg_realization_per_position": 7.69
+      },
+      "hopkins_dedup_mean": 0.905,
+      "unique_vectors": 191
+    },
+    {
+      "feature_version": "F1",
+      "set": "B",
+      "transform": "log1p",
+      "d": 6,
+      "max_vif": 34.8,
+      "max_vif_feature": "realization",
+      "vif": {
+        "ftk": 10.8,
+        "realization": 34.8,
+        "balance_index": 10.73,
+        "position_count": 18.07,
+        "vacant_position_count": 3.06,
+        "avg_realization_per_position": 27.88
+      }
+    },
+    {
+      "feature_version": "F1",
+      "set": "C",
+      "transform": "raw",
+      "d": 11,
+      "max_vif": 75.89,
+      "max_vif_feature": "pct_MM",
+      "vif": {
+        "ftk": 2.39,
+        "realization": 11.85,
+        "balance_index": 3.1,
+        "position_count": 8.4,
+        "vacant_position_count": 3.68,
+        "avg_realization_per_position": 8.2,
+        "pct_MA_MAK": 15.18,
+        "pct_MM": 75.89,
+        "pct_MD": 36.39,
+        "pct_SPESIALIS": 12.12,
+        "pct_GENERALIS": 65.13
+      },
+      "hopkins_dedup_mean": 0.914,
+      "unique_vectors": 281
+    },
+    {
+      "feature_version": "F1",
+      "set": "C",
+      "transform": "log1p",
+      "d": 11,
+      "max_vif": 78.35,
+      "max_vif_feature": "pct_MM",
+      "vif": {
+        "ftk": 11.81,
+        "realization": 36.59,
+        "balance_index": 11.45,
+        "position_count": 21.57,
+        "vacant_position_count": 3.13,
+        "avg_realization_per_position": 29.74,
+        "pct_MA_MAK": 15.58,
+        "pct_MM": 78.35,
+        "pct_MD": 37.28,
+        "pct_SPESIALIS": 12.15,
+        "pct_GENERALIS": 65.16
+      }
+    },
+    {
+      "feature_version": "F1",
+      "set": "R",
+      "transform": "raw",
+      "d": 3,
+      "max_vif": 3.03,
+      "max_vif_feature": "balance_index",
+      "vif": {
+        "balance_index": 3.03,
+        "vacant_share": 2.69,
+        "avg_realization_per_position": 1.76
+      },
+      "hopkins_dedup_mean": 0.862,
+      "unique_vectors": 162
+    },
+    {
+      "feature_version": "F1",
+      "set": "R",
+      "transform": "log1p",
+      "d": 3,
+      "max_vif": 3.3,
+      "max_vif_feature": "balance_index",
+      "vif": {
+        "balance_index": 3.3,
+        "vacant_share": 2.95,
+        "avg_realization_per_position": 2.78
+      }
+    },
+    {
+      "feature_version": "F2",
+      "set": "A",
+      "transform": "raw",
+      "d": 3,
+      "max_vif": 2.27,
+      "max_vif_feature": "realization",
+      "vif": {
+        "ftk": 1.86,
+        "realization": 2.27,
+        "balance_index": 1.84
+      },
+      "hopkins_dedup_mean": 0.829,
+      "unique_vectors": 83
+    },
+    {
+      "feature_version": "F2",
+      "set": "A",
+      "transform": "log1p",
+      "d": 3,
+      "max_vif": 9.78,
+      "max_vif_feature": "realization",
+      "vif": {
+        "ftk": 6.92,
+        "realization": 9.78,
+        "balance_index": 7.66
+      }
+    },
+    {
+      "feature_version": "F2",
+      "set": "B",
+      "transform": "raw",
+      "d": 5,
+      "max_vif": 3.86,
+      "max_vif_feature": "position_count",
+      "vif": {
+        "ftk": 2.2,
+        "realization": 3.41,
+        "balance_index": 2.25,
+        "position_count": 3.86,
+        "vacant_position_count": 3.27
+      },
+      "hopkins_dedup_mean": 0.893,
+      "unique_vectors": 191
+    },
+    {
+      "feature_version": "F2",
+      "set": "B",
+      "transform": "log1p",
+      "d": 5,
+      "max_vif": 11.08,
+      "max_vif_feature": "realization",
+      "vif": {
+        "ftk": 8.21,
+        "realization": 11.08,
+        "balance_index": 7.84,
+        "position_count": 5.21,
+        "vacant_position_count": 3.01
+      }
+    },
+    {
+      "feature_version": "F2",
+      "set": "C",
+      "transform": "raw",
+      "d": 9,
+      "max_vif": 4.88,
+      "max_vif_feature": "position_count",
+      "vif": {
+        "ftk": 2.26,
+        "realization": 3.57,
+        "balance_index": 2.51,
+        "position_count": 4.88,
+        "vacant_position_count": 3.43,
+        "pct_MA_MAK": 1.39,
+        "pct_MM": 2.73,
+        "pct_MD": 1.77,
+        "pct_SPESIALIS": 1.18
+      },
+      "hopkins_dedup_mean": 0.918,
+      "unique_vectors": 281
+    },
+    {
+      "feature_version": "F2",
+      "set": "C",
+      "transform": "log1p",
+      "d": 9,
+      "max_vif": 11.65,
+      "max_vif_feature": "realization",
+      "vif": {
+        "ftk": 8.67,
+        "realization": 11.65,
+        "balance_index": 8.37,
+        "position_count": 6.94,
+        "vacant_position_count": 3.09,
+        "pct_MA_MAK": 1.52,
+        "pct_MM": 3.58,
+        "pct_MD": 1.99,
+        "pct_SPESIALIS": 1.17
+      }
+    },
+    {
+      "feature_version": "F2",
+      "set": "R",
+      "transform": "raw",
+      "d": 3,
+      "max_vif": 3.03,
+      "max_vif_feature": "balance_index",
+      "vif": {
+        "balance_index": 3.03,
+        "vacant_share": 2.69,
+        "avg_realization_per_position": 1.76
+      },
+      "hopkins_dedup_mean": 0.862,
+      "unique_vectors": 162
+    },
+    {
+      "feature_version": "F2",
+      "set": "R",
+      "transform": "log1p",
+      "d": 3,
+      "max_vif": 3.3,
+      "max_vif_feature": "balance_index",
+      "vif": {
+        "balance_index": 3.3,
+        "vacant_share": 2.95,
+        "avg_realization_per_position": 2.78
+      }
+    }
+  ]
+}

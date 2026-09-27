@@ -1,0 +1,948 @@
+{
+  "dataset_version": "KP-2026-09-25-v2",
+  "source_file": "kantor_pusat_semua_direktorat.csv",
+  "sha256": "29b39045161d7cf126b167fcaa29b752196a81d086cb8397c1c7717c78ef1f82",
+  "random_seed": 42,
+  "rows": 3528,
+  "columns": [
+    "ID Organisasi",
+    "Nama Organisasi",
+    "Parent Organisasi",
+    "ID Parent",
+    "Level Organisasi",
+    "ID Jabatan",
+    "Nama Jabatan",
+    "Jenjang Jabatan",
+    "FTK Jabatan",
+    "Realisasi Jabatan",
+    "Periode Data"
+  ],
+  "dtypes": {
+    "organization_id": "object",
+    "organization_name": "object",
+    "parent_name": "object",
+    "parent_organization_id": "object",
+    "organization_level": "int64",
+    "position_id": "int64",
+    "position_name": "object",
+    "grade": "object",
+    "ftk": "int64",
+    "realization": "int64",
+    "period": "object"
+  },
+  "unique": {
+    "organization_id": 1301,
+    "organization_name": 1268,
+    "parent_name": 439,
+    "parent_organization_id": 449,
+    "organization_level": 7,
+    "position_id": 3528,
+    "position_name": 3221,
+    "grade": 25,
+    "ftk": 13,
+    "realization": 10,
+    "period": 1
+  },
+  "missing": {
+    "organization_id": 0,
+    "organization_name": 0,
+    "parent_name": 0,
+    "parent_organization_id": 0,
+    "organization_level": 0,
+    "position_id": 0,
+    "position_name": 5,
+    "grade": 42,
+    "ftk": 0,
+    "realization": 0,
+    "period": 0
+  },
+  "periods": [
+    "2026-09-25"
+  ],
+  "duplicates": {
+    "full_row": 0,
+    "period_org_position_id": 0,
+    "period_org_position_name": 0,
+    "position_id_globally_unique": true
+  },
+  "ftk_negative": 0,
+  "realization_negative": 0,
+  "position_edge_cases": {
+    "ftk_0": 658,
+    "realization_0": 1249,
+    "ftk_0_and_realization_0": 486,
+    "ftk_0_and_realization_gt_0": 172,
+    "ftk_gt_0_and_realization_0 (vacant)": 763,
+    "realization_gt_ftk": 605,
+    "realization_eq_ftk": 2059,
+    "realization_lt_ftk": 864
+  },
+  "extreme_values_position_level": {
+    "ftk": {
+      "q1": 1.0,
+      "q3": 1.0,
+      "iqr": 0.0,
+      "upper_1_5": 1.0,
+      "n_above_1_5": 558,
+      "upper_3_0": 1.0,
+      "n_above_3_0": 558,
+      "max": 17
+    },
+    "realization": {
+      "q1": 0.0,
+      "q3": 1.0,
+      "iqr": 1.0,
+      "upper_1_5": 2.5,
+      "n_above_1_5": 339,
+      "upper_3_0": 4.0,
+      "n_above_3_0": 76,
+      "max": 9
+    }
+  },
+  "top_realization_positions": [
+    {
+      "organization_id": "ORG-1176",
+      "organization_name": "SUB BIDANG AUDIT TRANSMISI DAN DISTRIBUSI 3D",
+      "position_name": "OFFICER AUDIT TRANSMISI DAN DISTRIBUSI 3D",
+      "grade": "GENERALIST 2 (G2) - 12",
+      "ftk": 4,
+      "realization": 9
+    },
+    {
+      "organization_id": "ORG-1169",
+      "organization_name": "SUB BIDANG AUDIT TRANSMISI DAN DISTRIBUSI 2A",
+      "position_name": "OFFICER AUDIT TRANSMISI DAN DISTRIBUSI 2A",
+      "grade": "GENERALIST 2 (G2) - 12",
+      "ftk": 4,
+      "realization": 9
+    },
+    {
+      "organization_id": "ORG-0734",
+      "organization_name": "SUB BIDANG PENCARIAN DAN KUALIFIKASI VENDOR",
+      "position_name": "OFFICER PENEMUAN DAN KUALIFIKASI VENDOR",
+      "grade": "GENERALIST 2 (G2) - 11",
+      "ftk": 3,
+      "realization": 9
+    },
+    {
+      "organization_id": "ORG-1166",
+      "organization_name": "SUB BIDANG AUDIT TRANSMISI DAN DISTRIBUSI 1B",
+      "position_name": "OFFICER AUDIT TRANSMISI DAN DISTRIBUSI 1B",
+      "grade": "GENERALIST 2 (G2) - 12",
+      "ftk": 4,
+      "realization": 8
+    },
+    {
+      "organization_id": "ORG-0005",
+      "organization_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "position_name": "SENIOR SPECIALIST HUMAN CAPITAL MANAGEMENT",
+      "grade": "SENIOR SPECIALIST (SSP) - 18",
+      "ftk": 2,
+      "realization": 8
+    },
+    {
+      "organization_id": "ORG-1105",
+      "organization_name": "SUB BIDANG ERP HUMAN CAPITAL AND QUALITY CONTROL",
+      "position_name": "OFFICER ERP HUMAN CAPITAL AND QUALITY CONTROL",
+      "grade": "GENERALIST 2 (G2) - 11",
+      "ftk": 2,
+      "realization": 8
+    },
+    {
+      "organization_id": "ORG-0788",
+      "organization_name": "SUB BIDANG RISIKO PENGADAAN PROYEK",
+      "position_name": "OFFICER RISIKO PENGADAAN PROYEK",
+      "grade": "GENERALIST 2 (G2) - 12",
+      "ftk": 3,
+      "realization": 8
+    },
+    {
+      "organization_id": "ORG-1165",
+      "organization_name": "SUB BIDANG AUDIT TRANSMISI DAN DISTRIBUSI 1A",
+      "position_name": "OFFICER AUDIT TRANSMISI DAN DISTRIBUSI 1A",
+      "grade": "GENERALIST 2 (G2) - 12",
+      "ftk": 8,
+      "realization": 7
+    },
+    {
+      "organization_id": "ORG-0470",
+      "organization_name": "SUB BIDANG OPERASIONAL PAYMENT CENTRALIZATION",
+      "position_name": "OFFICER OPERASIONAL PAYMENT CENTRALIZATION",
+      "grade": "GENERALIST 2 (G2) - 11",
+      "ftk": 5,
+      "realization": 7
+    },
+    {
+      "organization_id": "ORG-0647",
+      "organization_name": "BIDANG LEGAL BUSINESS PARTNER KEUANGAN DAN MANAJEMEN HUMAN CAPITAL",
+      "position_name": "OFFICER LEGAL",
+      "grade": "GENERALIST 2 (G2) - 12",
+      "ftk": 1,
+      "realization": 7
+    }
+  ],
+  "grade_values": {
+    "MANAJEMEN DASAR (MD) - 16": 673,
+    "GENERALIST 3 (G3) - 13": 620,
+    "GENERALIST 2 (G2) - 12": 547,
+    "GENERALIST 2 (G2) - 11": 371,
+    "GENERALIST 3 (G3) - 14": 327,
+    "SPECIALIST (SPC) - 15": 196,
+    "SPECIALIST (SPC) - 16": 135,
+    "MANAJEMEN MENENGAH (MM) - 19": 135,
+    "MANAJEMEN MENENGAH (MM) - 20": 126,
+    "SENIOR SPECIALIST (SSP) - 18": 92,
+    "MANAJEMEN DASAR (MD) - 15": 54,
+    "nan": 42,
+    "MANAJEMEN ATAS (MA) - 22": 36,
+    "SPECIALIST (SPC) - 17": 32,
+    "MANAJEMEN DASAR (MD) - 17": 29,
+    "MANAJEMEN ATAS (MA) - 23": 28,
+    "SENIOR SPECIALIST (SSP) - 20": 14,
+    "MANAJEMEN MENENGAH (MM) - 18": 14,
+    "MANAJEMEN ATAS KHUSUS (MAK) - 25": 13,
+    "VP": 12,
+    "AM": 12,
+    "JUNIOR EXPERT (JE) - 15": 8,
+    "GENERALIST 1 (G1) - 08": 4,
+    "SENIOR SPECIALIST (SSP) - 19": 3,
+    "MANAJEMEN ATAS KHUSUS (MAK) - 24": 3,
+    "GENERALIST 1 (G1) - 10": 2
+  },
+  "grade_code_counts": {
+    "G3": 947,
+    "G2": 918,
+    "MD": 756,
+    "SPC": 363,
+    "MM": 275,
+    "SSP": 109,
+    "MA": 64,
+    "None": 42,
+    "MAK": 16,
+    "VP": 12,
+    "AM": 12,
+    "JE": 8,
+    "G1": 6
+  },
+  "rows_with_abnormal_whitespace": 71,
+  "position_name_with_star_marker": 42,
+  "organizations": 1301,
+  "organization_id_with_multiple_attributes": 0,
+  "organization_names_shared_by_multiple_ids": {
+    "BAGIAN HCBP STRATEGI UIT JAWA BAGIAN TIMUR DAN BALI": 3,
+    "BIDANG EKSEKUTIF DIREKSI": 10,
+    "BIDANG HARMONISASI DAN MONITORING KEBIJAKAN": 2,
+    "BIDANG LEGAL BUSINESS PARTNER DISTRIBUSI, RETAIL DAN NIAGA": 2,
+    "SUB BIDANG ADMINISTRASI EKSEKUTIF DIREKSI": 10,
+    "SUB BIDANG ADMINISTRASI KONSTRUKSI DAN PMIS": 2,
+    "SUB BIDANG AKUISISI PELANGGAN DAN GREEN ENERGY": 2,
+    "SUB BIDANG LAYANAN KHUSUS DAN PENGUSAHAAN": 2,
+    "SUB BIDANG LEGAL": 2,
+    "SUB BIDANG MANAJEMEN DEMAND": 2,
+    "SUB BIDANG MANAJEMEN LOGISTIK": 2,
+    "SUB BIDANG PENGENDALIAN KINERJA DAN ANGGARAN KONSTRUKSI": 2,
+    "SUB BIDANG PRIORITY ACCOUNT EXECUTIVE SEKTOR INDIVIDU": 2,
+    "SUB BIDANG PRIORITY ACCOUNT EXECUTIVE SEKTOR KORPORASI": 2,
+    "SUB BIDANG REGULASI INTERNAL BISNIS KORPORAT": 2,
+    "SUB BIDANG RISIKO TRANSISI ENERGI, CLIMATE CHANGE DAN KEBERLANJUTAN": 2
+  },
+  "parent_resolution": {
+    "RESOLVED_BY_ID": 1292,
+    "PARENT_NOT_IN_DATASET": 9
+  },
+  "same_name_org_detail": [
+    {
+      "organization_id": "ORG-0582",
+      "organization_name": "BAGIAN HCBP STRATEGI UIT JAWA BAGIAN TIMUR DAN BALI",
+      "parent_name": "SUB BIDANG HCBP UIT JAWA BAGIAN TIMUR DAN BALI",
+      "parent_organization_id": "ORG-0200",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0583",
+      "organization_name": "BAGIAN HCBP STRATEGI UIT JAWA BAGIAN TIMUR DAN BALI",
+      "parent_name": "SUB BIDANG HCBP KANTOR PUSAT 1",
+      "parent_organization_id": "ORG-0201",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0584",
+      "organization_name": "BAGIAN HCBP STRATEGI UIT JAWA BAGIAN TIMUR DAN BALI",
+      "parent_name": "SUB BIDANG HCBP KANTOR PUSAT 2",
+      "parent_organization_id": "ORG-0202",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0014",
+      "organization_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_name": "DIREKTORAT DISTRIBUSI",
+      "parent_organization_id": "ORG-0003",
+      "organization_level": 4
+    },
+    {
+      "organization_id": "ORG-0020",
+      "organization_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_name": "DIREKTORAT KEUANGAN",
+      "parent_organization_id": "ORG-0004",
+      "organization_level": 4
+    },
+    {
+      "organization_id": "ORG-0026",
+      "organization_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "parent_organization_id": "ORG-0005",
+      "organization_level": 4
+    },
+    {
+      "organization_id": "ORG-0045",
+      "organization_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_name": "DIREKTORAT MANAJEMEN PEMBANGKITAN",
+      "parent_organization_id": "ORG-0006",
+      "organization_level": 4
+    },
+    {
+      "organization_id": "ORG-0049",
+      "organization_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_name": "DIREKTORAT MANAJEMEN PROYEK DAN ENERGI BARU TERBARUKAN",
+      "parent_organization_id": "ORG-0007",
+      "organization_level": 4
+    },
+    {
+      "organization_id": "ORG-0059",
+      "organization_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_name": "DIREKTORAT MANAJEMEN RISIKO",
+      "parent_organization_id": "ORG-0008",
+      "organization_level": 4
+    },
+    {
+      "organization_id": "ORG-0065",
+      "organization_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_name": "DIREKTORAT PERENCANAAN KORPORAT DAN PENGEMBANGAN BISNIS",
+      "parent_organization_id": "ORG-0009",
+      "organization_level": 4
+    },
+    {
+      "organization_id": "ORG-0070",
+      "organization_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_name": "DIREKTORAT RETAIL DAN NIAGA",
+      "parent_organization_id": "ORG-0010",
+      "organization_level": 4
+    },
+    {
+      "organization_id": "ORG-0076",
+      "organization_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_name": "DIREKTORAT TEKNOLOGI, ENGINEERING DAN KEBERLANJUTAN",
+      "parent_organization_id": "ORG-0011",
+      "organization_level": 4
+    },
+    {
+      "organization_id": "ORG-0081",
+      "organization_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_name": "DIREKTORAT TRANSMISI DAN PERENCANAAN SISTEM",
+      "parent_organization_id": "ORG-0012",
+      "organization_level": 4
+    },
+    {
+      "organization_id": "ORG-0224",
+      "organization_name": "BIDANG HARMONISASI DAN MONITORING KEBIJAKAN",
+      "parent_name": "SUB DIREKTORAT HUKUM DAN KEBIJAKAN",
+      "parent_organization_id": "ORG-0044",
+      "organization_level": 5
+    },
+    {
+      "organization_id": "ORG-0660",
+      "organization_name": "BIDANG HARMONISASI DAN MONITORING KEBIJAKAN",
+      "parent_name": "DIVISI REGULASI DAN KEBIJAKAN",
+      "parent_organization_id": "ORG-0230",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0225",
+      "organization_name": "BIDANG LEGAL BUSINESS PARTNER DISTRIBUSI, RETAIL DAN NIAGA",
+      "parent_name": "SUB DIREKTORAT HUKUM DAN KEBIJAKAN",
+      "parent_organization_id": "ORG-0044",
+      "organization_level": 5
+    },
+    {
+      "organization_id": "ORG-0646",
+      "organization_name": "BIDANG LEGAL BUSINESS PARTNER DISTRIBUSI, RETAIL DAN NIAGA",
+      "parent_name": "DIVISI KORPORASI DAN LEGAL BUSINESS PARTNER",
+      "parent_organization_id": "ORG-0227",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0091",
+      "organization_name": "SUB BIDANG ADMINISTRASI EKSEKUTIF DIREKSI",
+      "parent_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_organization_id": "ORG-0014",
+      "organization_level": 5
+    },
+    {
+      "organization_id": "ORG-0107",
+      "organization_name": "SUB BIDANG ADMINISTRASI EKSEKUTIF DIREKSI",
+      "parent_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_organization_id": "ORG-0020",
+      "organization_level": 5
+    },
+    {
+      "organization_id": "ORG-0140",
+      "organization_name": "SUB BIDANG ADMINISTRASI EKSEKUTIF DIREKSI",
+      "parent_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_organization_id": "ORG-0026",
+      "organization_level": 5
+    },
+    {
+      "organization_id": "ORG-0231",
+      "organization_name": "SUB BIDANG ADMINISTRASI EKSEKUTIF DIREKSI",
+      "parent_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_organization_id": "ORG-0045",
+      "organization_level": 5
+    },
+    {
+      "organization_id": "ORG-0245",
+      "organization_name": "SUB BIDANG ADMINISTRASI EKSEKUTIF DIREKSI",
+      "parent_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_organization_id": "ORG-0049",
+      "organization_level": 5
+    },
+    {
+      "organization_id": "ORG-0273",
+      "organization_name": "SUB BIDANG ADMINISTRASI EKSEKUTIF DIREKSI",
+      "parent_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_organization_id": "ORG-0059",
+      "organization_level": 5
+    },
+    {
+      "organization_id": "ORG-0292",
+      "organization_name": "SUB BIDANG ADMINISTRASI EKSEKUTIF DIREKSI",
+      "parent_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_organization_id": "ORG-0065",
+      "organization_level": 5
+    },
+    {
+      "organization_id": "ORG-0308",
+      "organization_name": "SUB BIDANG ADMINISTRASI EKSEKUTIF DIREKSI",
+      "parent_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_organization_id": "ORG-0070",
+      "organization_level": 5
+    },
+    {
+      "organization_id": "ORG-0330",
+      "organization_name": "SUB BIDANG ADMINISTRASI EKSEKUTIF DIREKSI",
+      "parent_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_organization_id": "ORG-0076",
+      "organization_level": 5
+    },
+    {
+      "organization_id": "ORG-0345",
+      "organization_name": "SUB BIDANG ADMINISTRASI EKSEKUTIF DIREKSI",
+      "parent_name": "BIDANG EKSEKUTIF DIREKSI",
+      "parent_organization_id": "ORG-0081",
+      "organization_level": 5
+    },
+    {
+      "organization_id": "ORG-0706",
+      "organization_name": "SUB BIDANG ADMINISTRASI KONSTRUKSI DAN PMIS",
+      "parent_name": "BIDANG ADMINISTRASI KONSTRUKSI JAWA, MADURA, BALI, MALUKU, PAPUA DAN NUSA TENGGARA",
+      "parent_organization_id": "ORG-0252",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0716",
+      "organization_name": "SUB BIDANG ADMINISTRASI KONSTRUKSI DAN PMIS",
+      "parent_name": "BIDANG ADMINISTRASI KONSTRUKSI SUMATERA, KALIMANTAN DAN SULAWESI",
+      "parent_organization_id": "ORG-0255",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0855",
+      "organization_name": "SUB BIDANG AKUISISI PELANGGAN DAN GREEN ENERGY",
+      "parent_name": "BIDANG AKUISISI PELANGGAN DAN LAYANAN KHUSUS",
+      "parent_organization_id": "ORG-0320",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0857",
+      "organization_name": "SUB BIDANG AKUISISI PELANGGAN DAN GREEN ENERGY",
+      "parent_name": "BIDANG AKUISISI�PELANGGAN DAN LAYANAN KHUSUS",
+      "parent_organization_id": "ORG-0321",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0856",
+      "organization_name": "SUB BIDANG LAYANAN KHUSUS DAN PENGUSAHAAN",
+      "parent_name": "BIDANG AKUISISI PELANGGAN DAN LAYANAN KHUSUS",
+      "parent_organization_id": "ORG-0320",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0858",
+      "organization_name": "SUB BIDANG LAYANAN KHUSUS DAN PENGUSAHAAN",
+      "parent_name": "BIDANG AKUISISI�PELANGGAN DAN LAYANAN KHUSUS",
+      "parent_organization_id": "ORG-0321",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-1046",
+      "organization_name": "SUB BIDANG LEGAL",
+      "parent_name": "BIDANG PERIZINAN DAN KELEMBAGAAN 1",
+      "parent_organization_id": "ORG-0652",
+      "organization_level": 7
+    },
+    {
+      "organization_id": "ORG-1049",
+      "organization_name": "SUB BIDANG LEGAL",
+      "parent_name": "BIDANG PERIZINAN DAN KELEMBAGAAN 2",
+      "parent_organization_id": "ORG-0653",
+      "organization_level": 7
+    },
+    {
+      "organization_id": "ORG-0726",
+      "organization_name": "SUB BIDANG MANAJEMEN DEMAND",
+      "parent_name": "BIDANG MANAJEMEN RANTAI PASOK PEMBANGKIT",
+      "parent_organization_id": "ORG-0258",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0729",
+      "organization_name": "SUB BIDANG MANAJEMEN DEMAND",
+      "parent_name": "BIDANG MANAJEMEN RANTAI PASOK TRANSMISI DAN DISTRIBUSI",
+      "parent_organization_id": "ORG-0259",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0727",
+      "organization_name": "SUB BIDANG MANAJEMEN LOGISTIK",
+      "parent_name": "BIDANG MANAJEMEN RANTAI PASOK PEMBANGKIT",
+      "parent_organization_id": "ORG-0258",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0730",
+      "organization_name": "SUB BIDANG MANAJEMEN LOGISTIK",
+      "parent_name": "BIDANG MANAJEMEN RANTAI PASOK TRANSMISI DAN DISTRIBUSI",
+      "parent_organization_id": "ORG-0259",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0707",
+      "organization_name": "SUB BIDANG PENGENDALIAN KINERJA DAN ANGGARAN KONSTRUKSI",
+      "parent_name": "BIDANG ADMINISTRASI KONSTRUKSI JAWA, MADURA, BALI, MALUKU, PAPUA DAN NUSA TENGGARA",
+      "parent_organization_id": "ORG-0252",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0717",
+      "organization_name": "SUB BIDANG PENGENDALIAN KINERJA DAN ANGGARAN KONSTRUKSI",
+      "parent_name": "BIDANG ADMINISTRASI KONSTRUKSI SUMATERA, KALIMANTAN DAN SULAWESI",
+      "parent_organization_id": "ORG-0255",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0863",
+      "organization_name": "SUB BIDANG PRIORITY ACCOUNT EXECUTIVE SEKTOR INDIVIDU",
+      "parent_name": "BIDANG PELANGGAN KORPORASI DAN BISNIS INDIVIDU",
+      "parent_organization_id": "ORG-0324",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0865",
+      "organization_name": "SUB BIDANG PRIORITY ACCOUNT EXECUTIVE SEKTOR INDIVIDU",
+      "parent_name": "BIDANG PELANGGAN�KORPORASI DAN BISNIS INDIVIDU",
+      "parent_organization_id": "ORG-0325",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0864",
+      "organization_name": "SUB BIDANG PRIORITY ACCOUNT EXECUTIVE SEKTOR KORPORASI",
+      "parent_name": "BIDANG PELANGGAN KORPORASI DAN BISNIS INDIVIDU",
+      "parent_organization_id": "ORG-0324",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0866",
+      "organization_name": "SUB BIDANG PRIORITY ACCOUNT EXECUTIVE SEKTOR KORPORASI",
+      "parent_name": "BIDANG PELANGGAN�KORPORASI DAN BISNIS INDIVIDU",
+      "parent_organization_id": "ORG-0325",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0644",
+      "organization_name": "SUB BIDANG REGULASI INTERNAL BISNIS KORPORAT",
+      "parent_name": "BIDANG REGULASI INTERNAL",
+      "parent_organization_id": "ORG-0226",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-1081",
+      "organization_name": "SUB BIDANG REGULASI INTERNAL BISNIS KORPORAT",
+      "parent_name": "BIDANG REGULASI INTERNAL",
+      "parent_organization_id": "ORG-0662",
+      "organization_level": 7
+    },
+    {
+      "organization_id": "ORG-0799",
+      "organization_name": "SUB BIDANG RISIKO TRANSISI ENERGI, CLIMATE CHANGE DAN KEBERLANJUTAN",
+      "parent_name": "BIDANG RISIKO TEKNOLOGI, ENJINERING DAN KEBERLANJUTAN",
+      "parent_organization_id": "ORG-0291",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0800",
+      "organization_name": "SUB BIDANG RISIKO TRANSISI ENERGI, CLIMATE CHANGE DAN KEBERLANJUTAN",
+      "parent_name": "SUB BIDANG ADMINISTRASI EKSEKUTIF DIREKSI",
+      "parent_organization_id": "ORG-0292",
+      "organization_level": 6
+    }
+  ],
+  "org_aggregate": {
+    "position_rows_per_org": {
+      "count": 1301.0,
+      "mean": 2.712,
+      "std": 1.246,
+      "min": 1.0,
+      "25%": 2.0,
+      "50%": 3.0,
+      "75%": 3.0,
+      "max": 18.0
+    },
+    "position_rows_per_org_counts": {
+      "1": 246,
+      "2": 231,
+      "3": 570,
+      "4": 215,
+      "5": 22,
+      "6": 6,
+      "7": 2,
+      "8": 3,
+      "9": 3,
+      "10": 1,
+      "11": 1,
+      "18": 1
+    },
+    "ftk_per_org": {
+      "count": 1301.0,
+      "mean": 2.914,
+      "std": 2.442,
+      "min": 0.0,
+      "25%": 1.0,
+      "50%": 3.0,
+      "75%": 4.0,
+      "max": 34.0
+    },
+    "realization_per_org": {
+      "count": 1301.0,
+      "mean": 2.772,
+      "std": 2.115,
+      "min": 0.0,
+      "25%": 1.0,
+      "50%": 3.0,
+      "75%": 4.0,
+      "max": 19.0
+    },
+    "orgs_ftk_0": 73,
+    "orgs_ftk_0_real_gt_0": 52,
+    "orgs_ftk_0_real_0": 21,
+    "orgs_with_1_position": 246,
+    "orgs_with_ftk_le_2": 554,
+    "orgs_by_level": {
+      "2": 1,
+      "3": 10,
+      "4": 77,
+      "5": 284,
+      "6": 625,
+      "7": 221,
+      "8": 83
+    },
+    "gap_sign": {
+      "positive": 379,
+      "zero": 604,
+      "negative": 318
+    },
+    "total_ftk": 3791,
+    "total_realization": 3607
+  },
+  "levels": [
+    {
+      "organization_level": 2,
+      "orgs": 1,
+      "positions": 3,
+      "ftk": 0,
+      "realization": 1
+    },
+    {
+      "organization_level": 3,
+      "orgs": 10,
+      "positions": 23,
+      "ftk": 5,
+      "realization": 44
+    },
+    {
+      "organization_level": 4,
+      "orgs": 77,
+      "positions": 199,
+      "ftk": 100,
+      "realization": 120
+    },
+    {
+      "organization_level": 5,
+      "orgs": 284,
+      "positions": 612,
+      "ftk": 535,
+      "realization": 414
+    },
+    {
+      "organization_level": 6,
+      "orgs": 625,
+      "positions": 1924,
+      "ftk": 2072,
+      "realization": 2082
+    },
+    {
+      "organization_level": 7,
+      "orgs": 221,
+      "positions": 569,
+      "ftk": 871,
+      "realization": 782
+    },
+    {
+      "organization_level": 8,
+      "orgs": 83,
+      "positions": 198,
+      "ftk": 208,
+      "realization": 164
+    }
+  ],
+  "ftk_realization_crosstab_position": {
+    "ftk=0": {
+      "real=0": 486,
+      "real=1": 118,
+      "real=2": 27,
+      "real=3": 17,
+      "real=4": 7,
+      "real=5": 2,
+      "real=6": 1,
+      "real=7": 0,
+      "real=8": 0,
+      "real=9": 0
+    },
+    "ftk=1": {
+      "real=0": 664,
+      "real=1": 1393,
+      "real=2": 189,
+      "real=3": 43,
+      "real=4": 18,
+      "real=5": 4,
+      "real=6": 0,
+      "real=7": 1,
+      "real=8": 0,
+      "real=9": 0
+    },
+    "ftk=2": {
+      "real=0": 66,
+      "real=1": 58,
+      "real=2": 123,
+      "real=3": 82,
+      "real=4": 32,
+      "real=5": 10,
+      "real=6": 2,
+      "real=7": 0,
+      "real=8": 2,
+      "real=9": 0
+    },
+    "ftk=3": {
+      "real=0": 15,
+      "real=1": 14,
+      "real=2": 17,
+      "real=3": 32,
+      "real=4": 11,
+      "real=5": 12,
+      "real=6": 5,
+      "real=7": 2,
+      "real=8": 1,
+      "real=9": 1
+    },
+    "ftk=4": {
+      "real=0": 5,
+      "real=1": 0,
+      "real=2": 1,
+      "real=3": 3,
+      "real=4": 13,
+      "real=5": 5,
+      "real=6": 6,
+      "real=7": 1,
+      "real=8": 1,
+      "real=9": 2
+    },
+    "ftk=5": {
+      "real=0": 3,
+      "real=1": 0,
+      "real=2": 0,
+      "real=3": 0,
+      "real=4": 4,
+      "real=5": 9,
+      "real=6": 2,
+      "real=7": 1,
+      "real=8": 0,
+      "real=9": 0
+    },
+    "ftk=6": {
+      "real=0": 1,
+      "real=1": 0,
+      "real=2": 0,
+      "real=3": 0,
+      "real=4": 0,
+      "real=5": 1,
+      "real=6": 3,
+      "real=7": 0,
+      "real=8": 0,
+      "real=9": 0
+    },
+    "ftk=7": {
+      "real=0": 1,
+      "real=1": 0,
+      "real=2": 0,
+      "real=3": 0,
+      "real=4": 0,
+      "real=5": 0,
+      "real=6": 0,
+      "real=7": 0,
+      "real=8": 0,
+      "real=9": 0
+    },
+    "ftk=8": {
+      "real=0": 4,
+      "real=1": 0,
+      "real=2": 0,
+      "real=3": 1,
+      "real=4": 0,
+      "real=5": 0,
+      "real=6": 0,
+      "real=7": 1,
+      "real=8": 0,
+      "real=9": 0
+    },
+    "ftk=10": {
+      "real=0": 1,
+      "real=1": 0,
+      "real=2": 0,
+      "real=3": 0,
+      "real=4": 0,
+      "real=5": 0,
+      "real=6": 0,
+      "real=7": 0,
+      "real=8": 0,
+      "real=9": 0
+    },
+    "ftk=11": {
+      "real=0": 0,
+      "real=1": 0,
+      "real=2": 0,
+      "real=3": 0,
+      "real=4": 0,
+      "real=5": 0,
+      "real=6": 1,
+      "real=7": 0,
+      "real=8": 0,
+      "real=9": 0
+    },
+    "ftk=16": {
+      "real=0": 1,
+      "real=1": 0,
+      "real=2": 0,
+      "real=3": 0,
+      "real=4": 0,
+      "real=5": 0,
+      "real=6": 0,
+      "real=7": 0,
+      "real=8": 0,
+      "real=9": 0
+    },
+    "ftk=17": {
+      "real=0": 2,
+      "real=1": 0,
+      "real=2": 0,
+      "real=3": 0,
+      "real=4": 0,
+      "real=5": 0,
+      "real=6": 0,
+      "real=7": 0,
+      "real=8": 0,
+      "real=9": 0
+    }
+  },
+  "issues_summary": [
+    {
+      "code": "SINGLE_PERIOD",
+      "severity": "HIGH",
+      "affected_rows": 3528,
+      "needs_user_decision": false
+    },
+    {
+      "code": "MISSING_GRADE",
+      "severity": "MEDIUM",
+      "affected_rows": 42,
+      "needs_user_decision": true
+    },
+    {
+      "code": "MISSING_POSITION_NAME",
+      "severity": "MEDIUM",
+      "affected_rows": 5,
+      "needs_user_decision": false
+    },
+    {
+      "code": "POSITION_FTK0_REAL0",
+      "severity": "MEDIUM",
+      "affected_rows": 486,
+      "needs_user_decision": true
+    },
+    {
+      "code": "POSITION_FTK0_REAL_GT0",
+      "severity": "MEDIUM",
+      "affected_rows": 172,
+      "needs_user_decision": true
+    },
+    {
+      "code": "EXTREME_REALIZATION",
+      "severity": "HIGH",
+      "affected_rows": 13,
+      "needs_user_decision": true
+    },
+    {
+      "code": "NONSTANDARD_GRADE_LABEL",
+      "severity": "MEDIUM",
+      "affected_rows": 24,
+      "needs_user_decision": true
+    },
+    {
+      "code": "ABNORMAL_WHITESPACE",
+      "severity": "LOW",
+      "affected_rows": 71,
+      "needs_user_decision": false
+    },
+    {
+      "code": "POSITION_NAME_STAR_MARKER",
+      "severity": "MEDIUM",
+      "affected_rows": 42,
+      "needs_user_decision": true
+    },
+    {
+      "code": "ORG_NAME_NOT_UNIQUE",
+      "severity": "LOW",
+      "affected_rows": 49,
+      "needs_user_decision": false
+    },
+    {
+      "code": "HIERARCHY_PARENT_NOT_IN_DATASET",
+      "severity": "LOW",
+      "affected_rows": 9,
+      "needs_user_decision": true
+    },
+    {
+      "code": "SMALL_ORGANIZATION_UNITS",
+      "severity": "HIGH",
+      "affected_rows": 554,
+      "needs_user_decision": true
+    }
+  ]
+}

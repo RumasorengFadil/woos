@@ -1,0 +1,19 @@
+{
+  "refit_ari": 1.0,
+  "cluster_sizes": {
+    "0": 59,
+    "1": 388,
+    "2": 537,
+    "3": 141,
+    "4": 155
+  },
+  "atypical_members": 45,
+  "not_segmented": 21,
+  "multivariate_outliers_placement": {
+    "Potensi Overstaffing": 13,
+    "Understaffing Kritis (Belum Terisi)": 11,
+    "Terisi Tanpa Formasi": 2,
+    "Understaffing Parsial": 1
+  },
+  "validation_status": "PENDING_BUSINESS_VALIDATION"
+}

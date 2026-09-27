@@ -1,0 +1,17 @@
+field,prd_requirement,status,note
+ID Organisasi,Wajib,ADA,"0 kosong, 379 nilai unik"
+Nama Organisasi,Wajib,ADA,"0 kosong, 373 nilai unik"
+Parent Organisasi,Disarankan,"ADA (berupa nama, bukan ID)",diresolusi via nama+level; 374/379 tepat
+ID Parent,Disarankan (§13.1 parent),TIDAK ADA,Tidak tersedia di dataset
+Level Organisasi,Wajib,ADA,"0 kosong, 6 nilai unik"
+ID Jabatan,Wajib,ADA,"0 kosong, 1157 nilai unik"
+Nama Jabatan,Wajib,ADA (ada nilai kosong),"1 kosong, 1036 nilai unik"
+Jenjang Jabatan,Wajib,ADA (ada nilai kosong),"34 kosong, 21 nilai unik"
+FTK Jabatan,Wajib,ADA,"0 kosong, 5 nilai unik"
+Realisasi Jabatan,Wajib,ADA,"0 kosong, 10 nilai unik"
+Periode Data,Sangat disarankan,ADA (1 periode),hanya ['2026-09-25']
+Data historis multi-periode,"Sangat direkomendasikan (§15, §16, §90)",TIDAK ADA,Tidak tersedia di dataset
+Status jabatan,"Ideal (§15, §89)",TIDAK ADA,Tidak tersedia di dataset
+Status pegawai,Ideal (§15),TIDAK ADA,Tidak tersedia di dataset
+Jenis organisasi,Opsional (§89),TIDAK ADA,Tidak tersedia di dataset
+Kategori jabatan,Opsional (§89),TIDAK ADA,Tidak tersedia di dataset

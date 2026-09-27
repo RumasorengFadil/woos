@@ -1,0 +1,16 @@
+,K-Means,Hierarchical,DBSCAN
+Experiment,EXP-KM-067,EXP-HC-044,EXP-DB-067
+Konfigurasi,set R / standard / n_clusters=5,"set A / robust / linkage=ward, n_clusters=3","set A / robust / eps=1.046, min_samples=40"
+Silhouette,0.5637,0.7163,0.7705000000000001
+Davies-Bouldin,0.6759000000000001,0.2843,0.2215
+Cluster Count,5,3,3
+Noise,0.0%,0.0%,4.8%
+Stability (ARI),0.998 ± 0.003,1.000 ± 0.000,0.998 ± 0.004
+Balance (entropy),0.8492000000000001,0.4262,0.4269
+Workforce η²,0.9033,0.7204,0.7754
+Cramér's V level,0.2722,0.3186,0.2623
+Cramér's V direktorat,0.2775,0.3331,0.2799
+ARI vs tanda gap,0.2726,0.1025,0.1373
+Rank score,44.667,50.167,31.0
+Overall rank,9,18,1
+Validation,EXPERIMENT,EXPERIMENT,SELECTED_CANDIDATE

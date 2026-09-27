@@ -1,0 +1,13 @@
+feature,iqr,n_outside_1_5_iqr,n_abs_z_gt_3,max_abs_z
+ftk,3.0,13,8,12.76
+realization,3.0,14,7,7.7
+balance_index,0.1429,289,0,2.68
+position_count,2.0,3,8,9.91
+vacant_position_count,1.0,38,15,11.72
+avg_realization_per_position,0.3333,370,18,9.59
+vacant_share,0.3333,114,0,2.51
+pct_MA_MAK,0.0,68,27,5.9
+pct_MM,0.0,276,0,2.13
+pct_MD,0.3333,82,0,2.88
+pct_SPESIALIS,0.0,128,74,6.31
+pct_GENERALIS,0.6667,0,0,1.42

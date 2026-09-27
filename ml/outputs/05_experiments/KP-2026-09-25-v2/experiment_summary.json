@@ -1,0 +1,27 @@
+{
+  "dataset_version": "KP-2026-09-25-v2",
+  "feature_version": "F2",
+  "model_version": "v1",
+  "code_version": "c4adf2d5834d",
+  "n_samples": 1280,
+  "runs": 619,
+  "runs_by_algorithm": {
+    "DBSCAN": 283,
+    "HIERARCHICAL": 252,
+    "KMEANS": 84
+  },
+  "runs_by_variant": {
+    "all": 412,
+    "unique": 207
+  },
+  "elbow_k": {
+    "A/robust": 3,
+    "A/standard": 5,
+    "B/robust": 3,
+    "B/standard": 4,
+    "C/robust": 3,
+    "C/standard": 5,
+    "R/robust": 4,
+    "R/standard": 4
+  }
+}

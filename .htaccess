@@ -1,0 +1,5 @@
+# Apache (MAMP): tolak akses langsung ke folder non-publik.
+Options -Indexes
+RedirectMatch 403 ^/?(.*/)?(config|shared|database|ml|data|tools|tests|docs|storage)/
+RedirectMatch 403 /\.(env|git)
+DirectoryIndex index.php

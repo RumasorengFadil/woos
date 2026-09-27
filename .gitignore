@@ -1,0 +1,9 @@
+ml/.venv/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+storage/logs/
+.pytest_cache/
+database/seeds/*.local.*
+assets/figures/

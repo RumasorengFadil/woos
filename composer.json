@@ -1,0 +1,20 @@
+{
+    "name": "woos/workforce-organization-segmentation",
+    "description": "Dashboard WOOS (PHP native) — membaca hasil model ML tervalidasi dari PostgreSQL.",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.3",
+        "ext-pdo": "*",
+        "ext-pdo_pgsql": "*",
+        "ext-mbstring": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "ext-curl": "*"
+    },
+    "scripts": {
+        "test": "php tests/php/run.php",
+        "serve": "php -S localhost:8090 -t . router.php"
+    }
+}

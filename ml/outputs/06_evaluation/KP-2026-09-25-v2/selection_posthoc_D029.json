@@ -1,0 +1,61 @@
+{
+  "rule": "D-029 (post-hoc, PROPOSED): keluarkan run dengan ARI (tanpa noise) terhadap aturan balance_index −1/+1/lainnya ≥ 0,90",
+  "n_trivial": 49,
+  "trivial_by_algorithm": {
+    "DBSCAN": 46,
+    "HIERARCHICAL": 3
+  },
+  "top_posthoc": {
+    "experiment_id": "EXP-KM-067",
+    "model_name": "KMEANS",
+    "feature_set": "R",
+    "scaler": "standard",
+    "params": "n_clusters=5",
+    "n_clusters": 5,
+    "noise_share": 0.0,
+    "silhouette": 0.5637,
+    "davies_bouldin": 0.6759000000000001,
+    "stability_ari": 0.9981,
+    "stability_ari_sd": 0.0026,
+    "size_entropy_norm": 0.8492000000000001,
+    "min_cluster_share": 0.0461,
+    "max_cluster_share": 0.41950000000000004,
+    "workforce_eta2": 0.9033,
+    "eta2_balance_index": 0.8675,
+    "eta2_vacant_share": 0.939,
+    "cramers_v_level": 0.2722,
+    "cramers_v_directorate": 0.2775,
+    "ari_vs_gap_sign": 0.2726,
+    "ari_vs_balance_poles": 0.2082,
+    "rank_score": 44.667,
+    "overall_rank": 9,
+    "rank_score_posthoc": 23.667
+  },
+  "best_posthoc_by_algorithm": [
+    {
+      "experiment_id": "EXP-KM-067",
+      "model_name": "KMEANS",
+      "feature_set": "R",
+      "scaler": "standard",
+      "params": "n_clusters=5",
+      "rank_score_posthoc": 23.667
+    },
+    {
+      "experiment_id": "EXP-DB-059",
+      "model_name": "DBSCAN",
+      "feature_set": "A",
+      "scaler": "robust",
+      "params": "eps=0.587, min_samples=20",
+      "rank_score_posthoc": 27.167
+    },
+    {
+      "experiment_id": "EXP-HC-195",
+      "model_name": "HIERARCHICAL",
+      "feature_set": "R",
+      "scaler": "standard",
+      "params": "linkage=ward, n_clusters=7",
+      "rank_score_posthoc": 31.167
+    }
+  ],
+  "selected_rule_D028_ari_vs_poles": 1.0
+}

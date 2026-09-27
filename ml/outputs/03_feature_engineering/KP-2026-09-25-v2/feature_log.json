@@ -1,0 +1,296 @@
+{
+  "dataset_version": "KP-2026-09-25-v2",
+  "feature_version": "F2",
+  "units": {
+    "direct": {
+      "units": 1301,
+      "model_population": 1280,
+      "excluded_no_active_positions": 21,
+      "validation": {
+        "gap_identity": true,
+        "fulfillment_null_iff_ftk_zero": true,
+        "staffing_eq_fulfillment_minus_1": true,
+        "balance_in_range": true,
+        "vacant_le_active": true,
+        "active_le_rows": true,
+        "pct_sum_1_when_active": true,
+        "pct_zero_when_inactive": true,
+        "grade_ftk_sum_matches": true,
+        "grade_real_sum_matches": true,
+        "totals_match_positions": true
+      },
+      "sets": {
+        "A": {
+          "features": [
+            "ftk",
+            "realization",
+            "balance_index"
+          ],
+          "d": 3,
+          "n": 1280,
+          "meets_70d": true,
+          "matrix_rank": 3,
+          "unique_vectors": 83,
+          "nan_count": 0
+        },
+        "B": {
+          "features": [
+            "ftk",
+            "realization",
+            "balance_index",
+            "position_count",
+            "vacant_position_count"
+          ],
+          "d": 5,
+          "n": 1280,
+          "meets_70d": true,
+          "matrix_rank": 5,
+          "unique_vectors": 191,
+          "nan_count": 0
+        },
+        "C": {
+          "features": [
+            "ftk",
+            "realization",
+            "balance_index",
+            "position_count",
+            "vacant_position_count",
+            "pct_MA_MAK",
+            "pct_MM",
+            "pct_MD",
+            "pct_SPESIALIS"
+          ],
+          "d": 9,
+          "n": 1280,
+          "meets_70d": true,
+          "matrix_rank": 9,
+          "unique_vectors": 281,
+          "nan_count": 0
+        },
+        "R": {
+          "features": [
+            "balance_index",
+            "vacant_share",
+            "avg_realization_per_position"
+          ],
+          "d": 3,
+          "n": 1280,
+          "meets_70d": true,
+          "matrix_rank": 3,
+          "unique_vectors": 162,
+          "nan_count": 0
+        }
+      }
+    },
+    "rollup": {
+      "units": 1301,
+      "model_population": 1283,
+      "excluded_no_active_positions": 18,
+      "validation": {
+        "gap_identity": true,
+        "fulfillment_null_iff_ftk_zero": true,
+        "staffing_eq_fulfillment_minus_1": true,
+        "balance_in_range": true,
+        "vacant_le_active": true,
+        "active_le_rows": true,
+        "pct_sum_1_when_active": true,
+        "pct_zero_when_inactive": true,
+        "grade_ftk_sum_matches": true,
+        "grade_real_sum_matches": true,
+        "rollup_tops_cover_all_ftk": true,
+        "rollup_ge_direct": true
+      },
+      "sets": {
+        "A": {
+          "features": [
+            "ftk",
+            "realization",
+            "balance_index"
+          ],
+          "d": 3,
+          "n": 1283,
+          "meets_70d": true,
+          "matrix_rank": 3,
+          "unique_vectors": 263,
+          "nan_count": 0
+        },
+        "B": {
+          "features": [
+            "ftk",
+            "realization",
+            "balance_index",
+            "position_count",
+            "vacant_position_count"
+          ],
+          "d": 5,
+          "n": 1283,
+          "meets_70d": true,
+          "matrix_rank": 5,
+          "unique_vectors": 507,
+          "nan_count": 0
+        },
+        "C": {
+          "features": [
+            "ftk",
+            "realization",
+            "balance_index",
+            "position_count",
+            "vacant_position_count",
+            "pct_MA_MAK",
+            "pct_MM",
+            "pct_MD",
+            "pct_SPESIALIS"
+          ],
+          "d": 9,
+          "n": 1283,
+          "meets_70d": true,
+          "matrix_rank": 9,
+          "unique_vectors": 580,
+          "nan_count": 0
+        },
+        "R": {
+          "features": [
+            "balance_index",
+            "vacant_share",
+            "avg_realization_per_position"
+          ],
+          "d": 3,
+          "n": 1283,
+          "meets_70d": true,
+          "matrix_rank": 3,
+          "unique_vectors": 468,
+          "nan_count": 0
+        }
+      }
+    }
+  },
+  "excluded_orgs": [
+    {
+      "organization_id": "ORG-0011",
+      "organization_name": "DIREKTORAT TEKNOLOGI, ENGINEERING DAN KEBERLANJUTAN",
+      "directorate_name": "DIREKTORAT TEKNOLOGI, ENGINEERING DAN KEBERLANJUTAN",
+      "position_rows": 1
+    },
+    {
+      "organization_id": "ORG-0107",
+      "organization_name": "SUB BIDANG ADMINISTRASI EKSEKUTIF DIREKSI",
+      "directorate_name": "DIREKTORAT KEUANGAN",
+      "position_rows": 2
+    },
+    {
+      "organization_id": "ORG-0223",
+      "organization_name": "BIDANG ADMINISTRASI DAN PENGADAAN HUKUM",
+      "directorate_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "position_rows": 2
+    },
+    {
+      "organization_id": "ORG-0224",
+      "organization_name": "BIDANG HARMONISASI DAN MONITORING KEBIJAKAN",
+      "directorate_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "position_rows": 1
+    },
+    {
+      "organization_id": "ORG-0225",
+      "organization_name": "BIDANG LEGAL BUSINESS PARTNER DISTRIBUSI, RETAIL DAN NIAGA",
+      "directorate_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "position_rows": 1
+    },
+    {
+      "organization_id": "ORG-0320",
+      "organization_name": "BIDANG AKUISISI PELANGGAN DAN LAYANAN KHUSUS",
+      "directorate_name": "DIREKTORAT RETAIL DAN NIAGA",
+      "position_rows": 2
+    },
+    {
+      "organization_id": "ORG-0328",
+      "organization_name": "BIDANG PENGELOLAAN PENJUALAN",
+      "directorate_name": "DIREKTORAT RETAIL DAN NIAGA",
+      "position_rows": 2
+    },
+    {
+      "organization_id": "ORG-0583",
+      "organization_name": "BAGIAN HCBP STRATEGI UIT JAWA BAGIAN TIMUR DAN BALI",
+      "directorate_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "position_rows": 6
+    },
+    {
+      "organization_id": "ORG-0584",
+      "organization_name": "BAGIAN HCBP STRATEGI UIT JAWA BAGIAN TIMUR DAN BALI",
+      "directorate_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "position_rows": 4
+    },
+    {
+      "organization_id": "ORG-0640",
+      "organization_name": "BAGIAN ADMINISTRASI, KINERJA, ANGGARAN DAN SDM HUKUM",
+      "directorate_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "position_rows": 3
+    },
+    {
+      "organization_id": "ORG-0641",
+      "organization_name": "BAGIAN PELAKSANA PENGADAAN",
+      "directorate_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "position_rows": 4
+    },
+    {
+      "organization_id": "ORG-0642",
+      "organization_name": "BAGIAN PERENCANA PENGADAAN",
+      "directorate_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "position_rows": 9
+    },
+    {
+      "organization_id": "ORG-0643",
+      "organization_name": "SUB BIDANG STRATEGI PENGELOLAAN DIGITAL DAN HUKUM",
+      "directorate_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "position_rows": 4
+    },
+    {
+      "organization_id": "ORG-0644",
+      "organization_name": "SUB BIDANG REGULASI INTERNAL BISNIS KORPORAT",
+      "directorate_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "position_rows": 1
+    },
+    {
+      "organization_id": "ORG-0800",
+      "organization_name": "SUB BIDANG RISIKO TRANSISI ENERGI, CLIMATE CHANGE DAN KEBERLANJUTAN",
+      "directorate_name": "DIREKTORAT PERENCANAAN KORPORAT DAN PENGEMBANGAN BISNIS",
+      "position_rows": 1
+    },
+    {
+      "organization_id": "ORG-0856",
+      "organization_name": "SUB BIDANG LAYANAN KHUSUS DAN PENGUSAHAAN",
+      "directorate_name": "DIREKTORAT RETAIL DAN NIAGA",
+      "position_rows": 1
+    },
+    {
+      "organization_id": "ORG-0871",
+      "organization_name": "SUB BIDANG PENGELOLAAN PIUTANG",
+      "directorate_name": "DIREKTORAT RETAIL DAN NIAGA",
+      "position_rows": 1
+    },
+    {
+      "organization_id": "ORG-0873",
+      "organization_name": "SUB BIDANG MONITORING DAN EVALUASI PENJUALAN",
+      "directorate_name": "DIREKTORAT RETAIL DAN NIAGA",
+      "position_rows": 1
+    },
+    {
+      "organization_id": "ORG-1016",
+      "organization_name": "BAGIAN PELAYANAN HUMAN CAPITAL AMBON",
+      "directorate_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "position_rows": 1
+    },
+    {
+      "organization_id": "ORG-1017",
+      "organization_name": "BAGIAN ADMINISTRASI, KINERJA, ANGGARAN, DAN SDM HUKUM",
+      "directorate_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "position_rows": 3
+    },
+    {
+      "organization_id": "ORG-1238",
+      "organization_name": "BAGIAN KONTRAK BANGKA BELITUNG",
+      "directorate_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "position_rows": 1
+    }
+  ],
+  "all_validation_passed": true
+}

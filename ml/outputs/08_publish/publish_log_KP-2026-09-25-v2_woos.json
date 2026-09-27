@@ -1,0 +1,30 @@
+{
+  "dataset_version": "KP-2026-09-25-v2",
+  "database": "woos (dari .env)",
+  "validated_model": "EXP-KM-067",
+  "model_ids": {
+    "EXP-KM-067": 7,
+    "EXP-HC-044": 8,
+    "EXP-DB-067": 9
+  },
+  "checks": {
+    "organizations": true,
+    "features": true,
+    "experiments": true,
+    "one_validated_model": true,
+    "validated_results_1301": true,
+    "segmented_1280": true,
+    "profile_counts_match": true,
+    "totals_ftk_match": true,
+    "viz_coordinates_complete": true,
+    "comparison_models": true
+  },
+  "figures_copied": [
+    "E01_kmeans_elbow.png",
+    "E04_dendrograms.png",
+    "E06_dbscan_noise_vs_clusters.png",
+    "V01_eligibility_funnel.png",
+    "V02_silhouette_vs_stability.png",
+    "P01_cluster_profile_heatmap.png"
+  ]
+}

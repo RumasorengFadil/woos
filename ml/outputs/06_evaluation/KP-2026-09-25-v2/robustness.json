@@ -1,0 +1,35 @@
+{
+  "selected": "EXP-DB-067",
+  "best_per_algorithm": {
+    "DBSCAN": {
+      "experiment_id": "EXP-DB-067",
+      "model_name": "DBSCAN",
+      "rollup_ari_vs_direct": 0.5855,
+      "without_outliers_n_removed": 27,
+      "without_outliers_ari_vs_full": 1.0
+    },
+    "K-Means": {
+      "experiment_id": "EXP-KM-067",
+      "model_name": "KMEANS",
+      "seed_stability_ari_mean": 1.0,
+      "seed_stability_ari_min": 1.0,
+      "rollup_ari_vs_direct": 0.4997,
+      "without_outliers_n_removed": 27,
+      "without_outliers_ari_vs_full": 0.8447,
+      "unique_variant_experiment": "EXP-KM-074",
+      "unique_variant_ari_vs_all": 0.4635
+    },
+    "Hierarchical": {
+      "experiment_id": "EXP-HC-044",
+      "model_name": "HIERARCHICAL",
+      "rollup_ari_vs_direct": 0.0622,
+      "without_outliers_n_removed": 27,
+      "without_outliers_ari_vs_full": 1.0
+    }
+  },
+  "ari_between_best_models": {
+    "DBSCAN vs K-Means": 0.2713,
+    "DBSCAN vs Hierarchical": 0.8227,
+    "K-Means vs Hierarchical": 0.2133
+  }
+}

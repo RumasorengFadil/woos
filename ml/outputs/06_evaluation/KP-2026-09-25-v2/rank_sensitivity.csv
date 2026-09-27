@@ -1,0 +1,9 @@
+variant,top_experiment,top_model,top_config,best_DBSCAN,best_KMEANS,best_HIERARCHICAL
+all_6_criteria,EXP-DB-067,DBSCAN,"A/robust/eps=1.046, min_samples=40",EXP-DB-067,EXP-KM-067,EXP-HC-044
+metrics_only (silhouette+DBI),EXP-DB-066,DBSCAN,"A/robust/eps=1.0, min_samples=40",EXP-DB-066,EXP-KM-016,EXP-HC-044
+without_silhouette,EXP-DB-067,DBSCAN,"A/robust/eps=1.046, min_samples=40",EXP-DB-067,EXP-KM-067,EXP-HC-195
+without_davies_bouldin,EXP-KM-067,KMEANS,R/standard/n_clusters=5,EXP-DB-067,EXP-KM-067,EXP-HC-195
+without_stability_ari,EXP-DB-066,DBSCAN,"A/robust/eps=1.0, min_samples=40",EXP-DB-066,EXP-KM-069,EXP-HC-195
+without_size_entropy_norm,EXP-DB-067,DBSCAN,"A/robust/eps=1.046, min_samples=40",EXP-DB-067,EXP-KM-016,EXP-HC-044
+without_workforce_eta2,EXP-DB-067,DBSCAN,"A/robust/eps=1.046, min_samples=40",EXP-DB-067,EXP-KM-015,EXP-HC-044
+without_cramers_v_level,EXP-DB-067,DBSCAN,"A/robust/eps=1.046, min_samples=40",EXP-DB-067,EXP-KM-016,EXP-HC-044

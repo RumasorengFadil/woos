@@ -1,0 +1,203 @@
+[
+  {
+    "model_version": "v1",
+    "experiment_id": "EXP-KM-067",
+    "cluster_id": 0,
+    "cluster_code": "UNBUDGETED",
+    "cluster_label": "Terisi Tanpa Formasi",
+    "prd_archetype": "Potensi Overstaffing (struktural)",
+    "organization_count": 59,
+    "organization_share": 0.0461,
+    "mean_ftk": 0.153,
+    "mean_realization": 2.966,
+    "mean_gap": -2.814,
+    "mean_fulfillment": 3.6667,
+    "median_fulfillment": 3.0,
+    "mean_staffing_ratio": 2.6667,
+    "mean_position_count": 1.831,
+    "mean_vacant_position": 0.0,
+    "mean_vacant_share": 0.0,
+    "mean_avg_realization_per_position": 1.565,
+    "sum_ftk": 9,
+    "sum_realization": 175,
+    "sum_gap": -166,
+    "ftk_zero_orgs": 50,
+    "characteristics": [
+      "Fulfillment tinggi (+5.0 SD)",
+      "Jabatan terisi tanpa formasi tinggi (+3.4 SD)",
+      "Keseimbangan realisasi-FTK tinggi (+2.5 SD)",
+      "Gap rendah (-1.3 SD)"
+    ],
+    "interpretation": "Unit memiliki pegawai pada jabatan yang tidak berformasi (FTK ≈ 0). Realisasi tidak tercakup rencana formasi; perlu penataan formasi atau penempatan.",
+    "centroid_scaled": {
+      "balance_index": 2.5091,
+      "vacant_share": -0.7222,
+      "avg_realization_per_position": 0.5721
+    },
+    "centroid_original": {
+      "balance_index": 0.9324,
+      "vacant_share": 0.0,
+      "avg_realization_per_position": 1.565
+    }
+  },
+  {
+    "model_version": "v1",
+    "experiment_id": "EXP-KM-067",
+    "cluster_id": 1,
+    "cluster_code": "PARTIAL_UNDER",
+    "cluster_label": "Understaffing Parsial",
+    "prd_archetype": "Understaffing",
+    "organization_count": 388,
+    "organization_share": 0.3031,
+    "mean_ftk": 3.546,
+    "mean_realization": 3.085,
+    "mean_gap": 0.461,
+    "mean_fulfillment": 0.8752,
+    "median_fulfillment": 1.0,
+    "mean_staffing_ratio": -0.1248,
+    "mean_position_count": 3.005,
+    "mean_vacant_position": 1.098,
+    "mean_vacant_share": 0.371,
+    "mean_avg_realization_per_position": 1.004,
+    "sum_ftk": 1376,
+    "sum_realization": 1197,
+    "sum_gap": 179,
+    "ftk_zero_orgs": 0,
+    "characteristics": [
+      "Jumlah jabatan tinggi (+0.6 SD)",
+      "Jabatan kosong tinggi (+0.6 SD)"
+    ],
+    "interpretation": "Formasi sebagian terisi: rata-rata ±1/3 jabatan kosong dan fulfillment < 100 %. Kekurangan tersebar pada beberapa jabatan, bukan kekosongan total.",
+    "centroid_scaled": {
+      "balance_index": -0.0874,
+      "vacant_share": 0.4777,
+      "avg_realization_per_position": -0.2138
+    },
+    "centroid_original": {
+      "balance_index": -0.091,
+      "vacant_share": 0.371,
+      "avg_realization_per_position": 1.0039
+    }
+  },
+  {
+    "model_version": "v1",
+    "experiment_id": "EXP-KM-067",
+    "cluster_id": 2,
+    "cluster_code": "STABLE",
+    "cluster_label": "Relatif Stabil",
+    "prd_archetype": "Relatif Stabil",
+    "organization_count": 537,
+    "organization_share": 0.4195,
+    "mean_ftk": 2.143,
+    "mean_realization": 2.291,
+    "mean_gap": -0.147,
+    "mean_fulfillment": 1.0705,
+    "median_fulfillment": 1.0,
+    "mean_staffing_ratio": 0.0705,
+    "mean_position_count": 1.911,
+    "mean_vacant_position": 0.004,
+    "mean_vacant_share": 0.0008,
+    "mean_avg_realization_per_position": 1.129,
+    "sum_ftk": 1151,
+    "sum_realization": 1230,
+    "sum_gap": -79,
+    "ftk_zero_orgs": 0,
+    "characteristics": [
+      "Porsi jabatan kosong rendah (-0.7 SD)",
+      "Jabatan kosong rendah (-0.7 SD)"
+    ],
+    "interpretation": "Realisasi ≈ FTK, hampir tanpa jabatan kosong. Didominasi unit kecil (±2 jabatan). 'Stabil' berarti seimbang pada snapshot ini, bukan rendah volatilitas (D-008).",
+    "centroid_scaled": {
+      "balance_index": 0.2043,
+      "vacant_share": -0.7195,
+      "avg_realization_per_position": -0.0381
+    },
+    "centroid_original": {
+      "balance_index": 0.024,
+      "vacant_share": 0.0008,
+      "avg_realization_per_position": 1.1293
+    }
+  },
+  {
+    "model_version": "v1",
+    "experiment_id": "EXP-KM-067",
+    "cluster_id": 3,
+    "cluster_code": "VACANT",
+    "cluster_label": "Understaffing Kritis (Belum Terisi)",
+    "prd_archetype": "Understaffing",
+    "organization_count": 141,
+    "organization_share": 0.1102,
+    "mean_ftk": 3.589,
+    "mean_realization": 0.27,
+    "mean_gap": 3.319,
+    "mean_fulfillment": 0.0554,
+    "median_fulfillment": 0.0,
+    "mean_staffing_ratio": -0.9446,
+    "mean_position_count": 2.397,
+    "mean_vacant_position": 2.17,
+    "mean_vacant_share": 0.9408,
+    "mean_avg_realization_per_position": 0.063,
+    "sum_ftk": 506,
+    "sum_realization": 38,
+    "sum_gap": 468,
+    "ftk_zero_orgs": 0,
+    "characteristics": [
+      "Porsi jabatan kosong tinggi (+2.3 SD)",
+      "Keseimbangan realisasi-FTK rendah (-2.2 SD)",
+      "Jabatan kosong tinggi (+1.8 SD)",
+      "Fulfillment rendah (-1.7 SD)"
+    ],
+    "interpretation": "Hampir seluruh jabatan berformasi belum terisi (≈ 94 % kosong, fulfillment ≈ 6 %). Termasuk unit baru/struktur yang belum diisi.",
+    "centroid_scaled": {
+      "balance_index": -2.178,
+      "vacant_share": 2.3209,
+      "avg_realization_per_position": -1.532
+    },
+    "centroid_original": {
+      "balance_index": -0.9149,
+      "vacant_share": 0.9408,
+      "avg_realization_per_position": 0.0627
+    }
+  },
+  {
+    "model_version": "v1",
+    "experiment_id": "EXP-KM-067",
+    "cluster_id": 4,
+    "cluster_code": "OVER",
+    "cluster_label": "Potensi Overstaffing",
+    "prd_archetype": "Potensi Overstaffing",
+    "organization_count": 155,
+    "organization_share": 0.1211,
+    "mean_ftk": 4.832,
+    "mean_realization": 6.239,
+    "mean_gap": -1.406,
+    "mean_fulfillment": 1.454,
+    "median_fulfillment": 1.25,
+    "mean_staffing_ratio": 0.454,
+    "mean_position_count": 2.606,
+    "mean_vacant_position": 0.187,
+    "mean_vacant_share": 0.0565,
+    "mean_avg_realization_per_position": 2.472,
+    "sum_ftk": 749,
+    "sum_realization": 967,
+    "sum_gap": -218,
+    "ftk_zero_orgs": 2,
+    "characteristics": [
+      "Pegawai per jabatan tinggi (+1.8 SD)",
+      "Realisasi tinggi (+1.6 SD)",
+      "Fulfillment tinggi (+0.9 SD)",
+      "FTK tinggi (+0.8 SD)"
+    ],
+    "interpretation": "Realisasi melebihi FTK (fulfillment rata-rata ≈ 145 %) dengan ±2,5 pegawai per jabatan; unit relatif lebih besar.",
+    "centroid_scaled": {
+      "balance_index": 0.5373,
+      "vacant_share": -0.5396,
+      "avg_realization_per_position": 1.843
+    },
+    "centroid_original": {
+      "balance_index": 0.1553,
+      "vacant_share": 0.0565,
+      "avg_realization_per_position": 2.4723
+    }
+  }
+]

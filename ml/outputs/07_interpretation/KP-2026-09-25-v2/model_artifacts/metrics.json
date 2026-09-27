@@ -1,0 +1,42 @@
+{
+  "experiment_id": "EXP-KM-067",
+  "model_name": "KMEANS",
+  "model_version": "v1",
+  "training_timestamp": "2026-09-25T15:47:13+00:00",
+  "dataset_version": "KP-2026-09-25-v2",
+  "feature_version": "F2",
+  "features_used": [
+    "balance_index",
+    "vacant_share",
+    "avg_realization_per_position"
+  ],
+  "scaler": "StandardScaler",
+  "hyperparameters": {
+    "n_clusters": 5,
+    "n_init": 20,
+    "random_state": 42
+  },
+  "silhouette_score": 0.5637,
+  "davies_bouldin_score": 0.6759000000000001,
+  "stability_ari": 0.9981,
+  "size_entropy_norm": 0.8492000000000001,
+  "workforce_eta2": 0.9033,
+  "cramers_v_level": 0.2722,
+  "cramers_v_directorate": 0.2775,
+  "cluster_count": 5,
+  "noise_count": 0,
+  "n_samples": 1280,
+  "n_not_segmented": 21,
+  "refit_identical_to_registry": true,
+  "selection_decisions": [
+    "D-027",
+    "D-028",
+    "D-029"
+  ],
+  "validation_status": "APPROVED",
+  "approval": {
+    "decision": "D-030",
+    "approved_by": "kustan@fahove.com (pemilik riset / pakar domain)",
+    "approved_on": "2026-09-27"
+  }
+}

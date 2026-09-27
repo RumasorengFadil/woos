@@ -1,0 +1,554 @@
+{
+  "dataset_version": "DLMHC-2026-09-25-v1",
+  "source_file": "direktorat_legal_manajemen_human_capital.csv",
+  "sha256": "3d805a9d32368cece82a10705a131cfc24cd969a422bd4be0b844f336234b243",
+  "random_seed": 42,
+  "rows": 1157,
+  "columns": [
+    "ID Organisasi",
+    "Nama Organisasi",
+    "Parent Organisasi",
+    "Level Organisasi",
+    "ID Jabatan",
+    "Nama Jabatan",
+    "Jenjang Jabatan",
+    "FTK Jabatan",
+    "Realisasi Jabatan",
+    "Periode Data"
+  ],
+  "dtypes": {
+    "organization_id": "object",
+    "organization_name": "object",
+    "parent_name": "object",
+    "organization_level": "int64",
+    "position_id": "int64",
+    "position_name": "object",
+    "grade": "object",
+    "ftk": "int64",
+    "realization": "int64",
+    "period": "object"
+  },
+  "unique": {
+    "organization_id": 379,
+    "organization_name": 373,
+    "parent_name": 122,
+    "organization_level": 6,
+    "position_id": 1157,
+    "position_name": 1036,
+    "grade": 21,
+    "ftk": 5,
+    "realization": 10,
+    "period": 1
+  },
+  "missing": {
+    "organization_id": 0,
+    "organization_name": 0,
+    "parent_name": 0,
+    "organization_level": 0,
+    "position_id": 0,
+    "position_name": 1,
+    "grade": 34,
+    "ftk": 0,
+    "realization": 0,
+    "period": 0
+  },
+  "periods": [
+    "2026-09-25"
+  ],
+  "duplicates": {
+    "full_row": 0,
+    "period_org_position_id": 0,
+    "period_org_position_name": 0,
+    "position_id_globally_unique": true
+  },
+  "ftk_negative": 0,
+  "realization_negative": 0,
+  "position_edge_cases": {
+    "ftk_0": 354,
+    "realization_0": 624,
+    "ftk_0_and_realization_0": 311,
+    "ftk_0_and_realization_gt_0": 43,
+    "ftk_gt_0_and_realization_0 (vacant)": 313,
+    "realization_gt_ftk": 143,
+    "realization_eq_ftk": 688,
+    "realization_lt_ftk": 326
+  },
+  "extreme_values_position_level": {
+    "ftk": {
+      "q1": 0.0,
+      "q3": 1.0,
+      "iqr": 1.0,
+      "upper_1_5": 2.5,
+      "n_above_1_5": 20,
+      "upper_3_0": 4.0,
+      "n_above_3_0": 0,
+      "max": 4
+    },
+    "realization": {
+      "q1": 0.0,
+      "q3": 1.0,
+      "iqr": 1.0,
+      "upper_1_5": 2.5,
+      "n_above_1_5": 49,
+      "upper_3_0": 4.0,
+      "n_above_3_0": 5,
+      "max": 29
+    }
+  },
+  "top_realization_positions": [
+    {
+      "organization_id": "ORG-0258",
+      "organization_name": "BIDANG LEGAL BUSINESS PARTNER DISTRIBUSI, RETAIL DAN NIAGA",
+      "position_name": "OFFICER LEGAL",
+      "grade": "GENERALIST 2 (G2) - 11",
+      "ftk": 2,
+      "realization": 29
+    },
+    {
+      "organization_id": "ORG-0001",
+      "organization_name": "DIREKTORAT LEGAL DAN MANAJEMEN HUMAN CAPITAL",
+      "position_name": "SENIOR SPECIALIST HUMAN CAPITAL MANAGEMENT",
+      "grade": "SENIOR SPECIALIST (SSP) - 18",
+      "ftk": 2,
+      "realization": 8
+    },
+    {
+      "organization_id": "ORG-0259",
+      "organization_name": "BIDANG LEGAL BUSINESS PARTNER KEUANGAN DAN MANAJEMEN HUMAN CAPITAL",
+      "position_name": "OFFICER LEGAL",
+      "grade": "GENERALIST 2 (G2) - 12",
+      "ftk": 1,
+      "realization": 7
+    },
+    {
+      "organization_id": "ORG-0066",
+      "organization_name": "SUB BIDANG HCBP UIP2B JAWA, MADURA DAN BALI",
+      "position_name": "OFFICER HCBP UIP2B JAWA, MADURA DAN BALI",
+      "grade": "GENERALIST 2 (G2) - 11",
+      "ftk": 3,
+      "realization": 6
+    },
+    {
+      "organization_id": "ORG-0138",
+      "organization_name": "BAGIAN HCBP LAYANAN UID SUMATERA UTARA",
+      "position_name": "OFFICER HCBP LAYANAN UID SUMATERA UTARA",
+      "grade": "GENERALIST 2 (G2) - 11",
+      "ftk": 3,
+      "realization": 5
+    },
+    {
+      "organization_id": "ORG-0033",
+      "organization_name": "SUB BIDANG HCBP UIP MALUKU DAN PAPUA",
+      "position_name": "OFFICER HCBP UIP MALUKU DAN PAPUA",
+      "grade": "GENERALIST 2 (G2) - 11",
+      "ftk": 1,
+      "realization": 4
+    },
+    {
+      "organization_id": "ORG-0039",
+      "organization_name": "SUB BIDANG HCBP UIP SUMATERA BAGIAN UTARA",
+      "position_name": "OFFICER HCBP UIP SUMATERA BAGIAN UTARA",
+      "grade": "GENERALIST 2 (G2) - 11",
+      "ftk": 1,
+      "realization": 4
+    },
+    {
+      "organization_id": "ORG-0172",
+      "organization_name": "BAGIAN HCBP PENGEMBANGAN TALENTA UID JAKARTA RAYA",
+      "position_name": "OFFICER HCBP PENGEMBANGAN TALENTA UID JAKARTA RAYA",
+      "grade": "GENERALIST 2 (G2) - 11",
+      "ftk": 2,
+      "realization": 4
+    },
+    {
+      "organization_id": "ORG-0213",
+      "organization_name": "SUB BIDANG MANAJEMEN KINERJA HUMAN CAPITAL",
+      "position_name": "OFFICER MANAJEMEN KINERJA HUMAN CAPITAL",
+      "grade": "GENERALIST 2 (G2) - 12",
+      "ftk": 1,
+      "realization": 4
+    },
+    {
+      "organization_id": "ORG-0139",
+      "organization_name": "BAGIAN HCBP PENGEMBANGAN TALENTA UID SUMATERA UTARA",
+      "position_name": "OFFICER HCBP PENGEMBANGAN TALENTA UID SUMATERA UTARA",
+      "grade": "GENERALIST 2 (G2) - 11",
+      "ftk": 2,
+      "realization": 4
+    }
+  ],
+  "grade_values": {
+    "GENERALIST 3 (G3) - 13": 219,
+    "MANAJEMEN DASAR (MD) - 16": 146,
+    "GENERALIST 2 (G2) - 12": 139,
+    "GENERALIST 2 (G2) - 11": 130,
+    "GENERALIST 3 (G3) - 14": 122,
+    "SPECIALIST (SPC) - 16": 115,
+    "SPECIALIST (SPC) - 15": 64,
+    "SENIOR SPECIALIST (SSP) - 18": 35,
+    "nan": 34,
+    "MANAJEMEN DASAR (MD) - 17": 29,
+    "MANAJEMEN MENENGAH (MM) - 20": 27,
+    "MANAJEMEN MENENGAH (MM) - 19": 24,
+    "MANAJEMEN DASAR (MD) - 15": 22,
+    "SENIOR SPECIALIST (SSP) - 20": 13,
+    "AM": 12,
+    "VP": 11,
+    "MANAJEMEN ATAS (MA) - 23": 5,
+    "MANAJEMEN ATAS (MA) - 22": 3,
+    "SPECIALIST (SPC) - 17": 2,
+    "MANAJEMEN MENENGAH (MM) - 18": 2,
+    "MANAJEMEN ATAS KHUSUS (MAK) - 25": 2,
+    "GENERALIST 1 (G1) - 10": 1
+  },
+  "grade_code_counts": {
+    "G3": 341,
+    "G2": 269,
+    "MD": 197,
+    "SPC": 181,
+    "MM": 53,
+    "SSP": 48,
+    "None": 34,
+    "AM": 12,
+    "VP": 11,
+    "MA": 8,
+    "MAK": 2,
+    "G1": 1
+  },
+  "rows_with_abnormal_whitespace": 9,
+  "position_name_with_star_marker": 35,
+  "organizations": 379,
+  "organization_id_with_multiple_attributes": 0,
+  "organization_names_shared_by_multiple_ids": {
+    "BAGIAN HCBP STRATEGI UIT JAWA BAGIAN TIMUR DAN BALI": 3,
+    "BIDANG HARMONISASI DAN MONITORING KEBIJAKAN": 2,
+    "BIDANG LEGAL BUSINESS PARTNER DISTRIBUSI, RETAIL DAN NIAGA": 2,
+    "SUB BIDANG LEGAL": 2,
+    "SUB BIDANG REGULASI INTERNAL BISNIS KORPORAT": 2
+  },
+  "parent_resolution": {
+    "RESOLVED_NAME_LEVEL": 374,
+    "PARENT_NOT_IN_DATASET": 4,
+    "RESOLVED_NAME_ONLY_LEVEL_MISMATCH": 1
+  },
+  "same_name_org_detail": [
+    {
+      "organization_id": "ORG-0194",
+      "organization_name": "BAGIAN HCBP STRATEGI UIT JAWA BAGIAN TIMUR DAN BALI",
+      "parent_name": "SUB BIDANG HCBP UIT JAWA BAGIAN TIMUR DAN BALI",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0195",
+      "organization_name": "BAGIAN HCBP STRATEGI UIT JAWA BAGIAN TIMUR DAN BALI",
+      "parent_name": "SUB BIDANG HCBP KANTOR PUSAT 1",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0196",
+      "organization_name": "BAGIAN HCBP STRATEGI UIT JAWA BAGIAN TIMUR DAN BALI",
+      "parent_name": "SUB BIDANG HCBP KANTOR PUSAT 2",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0105",
+      "organization_name": "BIDANG HARMONISASI DAN MONITORING KEBIJAKAN",
+      "parent_name": "SUB DIREKTORAT HUKUM DAN KEBIJAKAN",
+      "organization_level": 5
+    },
+    {
+      "organization_id": "ORG-0272",
+      "organization_name": "BIDANG HARMONISASI DAN MONITORING KEBIJAKAN",
+      "parent_name": "DIVISI REGULASI DAN KEBIJAKAN",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0106",
+      "organization_name": "BIDANG LEGAL BUSINESS PARTNER DISTRIBUSI, RETAIL DAN NIAGA",
+      "parent_name": "SUB DIREKTORAT HUKUM DAN KEBIJAKAN",
+      "organization_level": 5
+    },
+    {
+      "organization_id": "ORG-0258",
+      "organization_name": "BIDANG LEGAL BUSINESS PARTNER DISTRIBUSI, RETAIL DAN NIAGA",
+      "parent_name": "DIVISI KORPORASI DAN LEGAL BUSINESS PARTNER",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0305",
+      "organization_name": "SUB BIDANG LEGAL",
+      "parent_name": "BIDANG PERIZINAN DAN KELEMBAGAAN 1",
+      "organization_level": 7
+    },
+    {
+      "organization_id": "ORG-0308",
+      "organization_name": "SUB BIDANG LEGAL",
+      "parent_name": "BIDANG PERIZINAN DAN KELEMBAGAAN 2",
+      "organization_level": 7
+    },
+    {
+      "organization_id": "ORG-0256",
+      "organization_name": "SUB BIDANG REGULASI INTERNAL BISNIS KORPORAT",
+      "parent_name": "BIDANG REGULASI INTERNAL",
+      "organization_level": 6
+    },
+    {
+      "organization_id": "ORG-0338",
+      "organization_name": "SUB BIDANG REGULASI INTERNAL BISNIS KORPORAT",
+      "parent_name": "BIDANG REGULASI INTERNAL",
+      "organization_level": 7
+    }
+  ],
+  "org_aggregate": {
+    "position_rows_per_org": {
+      "count": 379.0,
+      "mean": 3.053,
+      "std": 1.521,
+      "min": 1.0,
+      "25%": 2.0,
+      "50%": 3.0,
+      "75%": 4.0,
+      "max": 18.0
+    },
+    "position_rows_per_org_counts": {
+      "1": 33,
+      "2": 98,
+      "3": 128,
+      "4": 101,
+      "5": 6,
+      "6": 5,
+      "7": 1,
+      "8": 2,
+      "9": 2,
+      "10": 1,
+      "11": 1,
+      "18": 1
+    },
+    "ftk_per_org": {
+      "count": 379.0,
+      "mean": 2.454,
+      "std": 1.618,
+      "min": 0.0,
+      "25%": 1.0,
+      "50%": 2.0,
+      "75%": 3.0,
+      "max": 14.0
+    },
+    "realization_per_org": {
+      "count": 379.0,
+      "mean": 2.008,
+      "std": 2.5,
+      "min": 0.0,
+      "25%": 1.0,
+      "50%": 2.0,
+      "75%": 3.0,
+      "max": 39.0
+    },
+    "orgs_ftk_0": 23,
+    "orgs_ftk_0_real_gt_0": 10,
+    "orgs_ftk_0_real_0": 13,
+    "orgs_with_1_position": 33,
+    "orgs_with_ftk_le_2": 198,
+    "orgs_by_level": {
+      "3": 1,
+      "4": 19,
+      "5": 90,
+      "6": 164,
+      "7": 65,
+      "8": 40
+    },
+    "gap_sign": {
+      "positive": 139,
+      "zero": 179,
+      "negative": 61
+    },
+    "total_ftk": 930,
+    "total_realization": 761
+  },
+  "levels": [
+    {
+      "organization_level": 3,
+      "orgs": 1,
+      "positions": 2,
+      "ftk": 2,
+      "realization": 8
+    },
+    {
+      "organization_level": 4,
+      "orgs": 19,
+      "positions": 66,
+      "ftk": 20,
+      "realization": 26
+    },
+    {
+      "organization_level": 5,
+      "orgs": 90,
+      "positions": 287,
+      "ftk": 163,
+      "realization": 175
+    },
+    {
+      "organization_level": 6,
+      "orgs": 164,
+      "positions": 569,
+      "ftk": 516,
+      "realization": 509
+    },
+    {
+      "organization_level": 7,
+      "orgs": 65,
+      "positions": 158,
+      "ftk": 151,
+      "realization": 35
+    },
+    {
+      "organization_level": 8,
+      "orgs": 40,
+      "positions": 75,
+      "ftk": 78,
+      "realization": 8
+    }
+  ],
+  "ftk_realization_crosstab_position": {
+    "ftk=0": {
+      "real=0": 311,
+      "real=1": 38,
+      "real=2": 5,
+      "real=3": 0,
+      "real=4": 0,
+      "real=5": 0,
+      "real=6": 0,
+      "real=7": 0,
+      "real=8": 0,
+      "real=29": 0
+    },
+    "ftk=1": {
+      "real=0": 279,
+      "real=1": 356,
+      "real=2": 55,
+      "real=3": 10,
+      "real=4": 3,
+      "real=5": 0,
+      "real=6": 0,
+      "real=7": 1,
+      "real=8": 0,
+      "real=29": 0
+    },
+    "ftk=2": {
+      "real=0": 25,
+      "real=1": 6,
+      "real=2": 19,
+      "real=3": 24,
+      "real=4": 3,
+      "real=5": 0,
+      "real=6": 0,
+      "real=7": 0,
+      "real=8": 1,
+      "real=29": 1
+    },
+    "ftk=3": {
+      "real=0": 4,
+      "real=1": 0,
+      "real=2": 4,
+      "real=3": 2,
+      "real=4": 0,
+      "real=5": 1,
+      "real=6": 1,
+      "real=7": 0,
+      "real=8": 0,
+      "real=29": 0
+    },
+    "ftk=4": {
+      "real=0": 5,
+      "real=1": 0,
+      "real=2": 1,
+      "real=3": 2,
+      "real=4": 0,
+      "real=5": 0,
+      "real=6": 0,
+      "real=7": 0,
+      "real=8": 0,
+      "real=29": 0
+    }
+  },
+  "issues_summary": [
+    {
+      "code": "SINGLE_PERIOD",
+      "severity": "HIGH",
+      "affected_rows": 1157,
+      "needs_user_decision": false
+    },
+    {
+      "code": "MISSING_GRADE",
+      "severity": "MEDIUM",
+      "affected_rows": 34,
+      "needs_user_decision": true
+    },
+    {
+      "code": "MISSING_POSITION_NAME",
+      "severity": "MEDIUM",
+      "affected_rows": 1,
+      "needs_user_decision": false
+    },
+    {
+      "code": "POSITION_FTK0_REAL0",
+      "severity": "MEDIUM",
+      "affected_rows": 311,
+      "needs_user_decision": true
+    },
+    {
+      "code": "POSITION_FTK0_REAL_GT0",
+      "severity": "MEDIUM",
+      "affected_rows": 43,
+      "needs_user_decision": true
+    },
+    {
+      "code": "EXTREME_REALIZATION",
+      "severity": "HIGH",
+      "affected_rows": 3,
+      "needs_user_decision": true
+    },
+    {
+      "code": "NONSTANDARD_GRADE_LABEL",
+      "severity": "MEDIUM",
+      "affected_rows": 23,
+      "needs_user_decision": true
+    },
+    {
+      "code": "ABNORMAL_WHITESPACE",
+      "severity": "LOW",
+      "affected_rows": 9,
+      "needs_user_decision": false
+    },
+    {
+      "code": "POSITION_NAME_STAR_MARKER",
+      "severity": "MEDIUM",
+      "affected_rows": 35,
+      "needs_user_decision": true
+    },
+    {
+      "code": "ORG_NAME_NOT_UNIQUE",
+      "severity": "MEDIUM",
+      "affected_rows": 11,
+      "needs_user_decision": false
+    },
+    {
+      "code": "HIERARCHY_PARENT_NOT_IN_DATASET",
+      "severity": "LOW",
+      "affected_rows": 4,
+      "needs_user_decision": true
+    },
+    {
+      "code": "HIERARCHY_RESOLVED_NAME_ONLY_LEVEL_MISMATCH",
+      "severity": "MEDIUM",
+      "affected_rows": 1,
+      "needs_user_decision": true
+    },
+    {
+      "code": "SMALL_ORGANIZATION_UNITS",
+      "severity": "HIGH",
+      "affected_rows": 198,
+      "needs_user_decision": true
+    }
+  ]
+}

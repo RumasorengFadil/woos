@@ -1,0 +1,11 @@
+unit,feature_set,n,d,n_required_70d (Dolnicar 2014),meets_70d,n_required_2pow_d (Formann 1984),meets_2pow_d,n_per_feature,matrix_rank,rank_deficient,unique_vectors,unique_vector_share,share_orgs_in_tied_vectors,largest_tie_group,hopkins_standard_mean,hopkins_standard_sd,hopkins_robust_mean,hopkins_robust_sd,hopkins_dedup_mean,hopkins_dedup_sd
+direct,A_core,379,4,280,True,16,True,94.8,3,True,38,0.1,0.976,67,0.992,0.018,0.991,0.019,0.862,0.093
+direct,A_core_nonredundant,379,3,210,True,8,True,126.3,3,False,38,0.1,0.976,67,0.989,0.024,0.989,0.026,0.829,0.123
+direct,B_structure,379,6,420,False,64,True,63.2,6,False,66,0.174,0.931,61,0.983,0.018,0.983,0.02,0.864,0.053
+direct,C_grade,379,13,910,False,8192,False,29.2,13,False,105,0.277,0.847,32,0.976,0.015,0.972,0.019,0.886,0.044
+direct,R_ratio_only,379,3,210,True,8,True,126.3,3,False,52,0.137,0.945,99,0.98,0.026,0.98,0.024,0.806,0.057
+rollup,A_core,379,4,280,True,16,True,94.8,3,True,97,0.256,0.858,54,0.99,0.018,0.991,0.02,0.962,0.037
+rollup,A_core_nonredundant,379,3,210,True,8,True,126.3,3,False,97,0.256,0.858,54,0.991,0.019,0.992,0.019,0.97,0.042
+rollup,B_structure,379,6,420,False,64,True,63.2,6,False,140,0.369,0.749,35,0.99,0.015,0.992,0.016,0.962,0.042
+rollup,C_grade,379,13,910,False,8192,False,29.2,13,False,169,0.446,0.689,22,0.981,0.017,0.991,0.016,0.936,0.037
+rollup,R_ratio_only,379,3,210,True,8,True,126.3,3,False,120,0.317,0.77,72,0.962,0.013,0.965,0.012,0.827,0.041

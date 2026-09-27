@@ -1,0 +1,169 @@
+{
+  "feature_version": "F2",
+  "dataset_version": "KP-2026-09-25-v2",
+  "unit_of_analysis": "1 organisasi + 1 periode (PRD §17)",
+  "unit_definitions": {
+    "direct": "jabatan langsung (utama)",
+    "rollup": "organisasi + sub-unit (sensitivitas)"
+  },
+  "model_population_rule": "has_active_positions = 1 dan bukan wadah virtual (D-017)",
+  "feature_sets": {
+    "A": [
+      "ftk",
+      "realization",
+      "balance_index"
+    ],
+    "B": [
+      "ftk",
+      "realization",
+      "balance_index",
+      "position_count",
+      "vacant_position_count"
+    ],
+    "C": [
+      "ftk",
+      "realization",
+      "balance_index",
+      "position_count",
+      "vacant_position_count",
+      "pct_MA_MAK",
+      "pct_MM",
+      "pct_MD",
+      "pct_SPESIALIS"
+    ],
+    "R": [
+      "balance_index",
+      "vacant_share",
+      "avg_realization_per_position"
+    ]
+  },
+  "model_grade_groups": {
+    "MA_MAK": [
+      "MAK",
+      "MA"
+    ],
+    "MM": [
+      "MM"
+    ],
+    "MD": [
+      "MD"
+    ],
+    "SPESIALIS": [
+      "SPESIALIS"
+    ],
+    "GENERALIS": [
+      "GENERALIS"
+    ]
+  },
+  "scalers": {
+    "default": "standard",
+    "alternative": "robust"
+  },
+  "dictionary": {
+    "ftk": {
+      "formula": "Σ FTK jabatan",
+      "role": "model+display",
+      "reference": "PRD §6"
+    },
+    "realization": {
+      "formula": "Σ realisasi jabatan",
+      "role": "model+display",
+      "reference": "PRD §6"
+    },
+    "gap": {
+      "formula": "ftk − realization",
+      "role": "display",
+      "reference": "PRD §7; dikeluarkan dari model (D-009: linear-dependen)"
+    },
+    "fulfillment_ratio": {
+      "formula": "realization / ftk; NULL bila ftk = 0",
+      "role": "display",
+      "reference": "PRD §8; D-003"
+    },
+    "staffing_ratio": {
+      "formula": "(realization − ftk) / ftk; NULL bila ftk = 0",
+      "role": "display",
+      "reference": "PRD §9; = fulfillment − 1 (redundan), D-003"
+    },
+    "balance_index": {
+      "formula": "(realization − ftk) / (realization + ftk); 0 bila keduanya 0; ∈ [−1, 1]",
+      "role": "model",
+      "reference": "D-003; transformasi monoton dari fulfillment untuk ftk > 0"
+    },
+    "ftk_zero": {
+      "formula": "1 bila ftk = 0",
+      "role": "flag",
+      "reference": "D-003"
+    },
+    "position_rows": {
+      "formula": "jumlah baris jabatan (termasuk dormant)",
+      "role": "display",
+      "reference": "D-002"
+    },
+    "position_count": {
+      "formula": "jumlah jabatan aktif (FTK > 0 atau realisasi > 0)",
+      "role": "model+display",
+      "reference": "PRD §6; D-002"
+    },
+    "dormant_position_count": {
+      "formula": "jabatan FTK = 0 & realisasi = 0",
+      "role": "display",
+      "reference": "D-002"
+    },
+    "vacant_position_count": {
+      "formula": "jabatan FTK > 0 & realisasi = 0",
+      "role": "model+display",
+      "reference": "PRD §10"
+    },
+    "vacant_share": {
+      "formula": "vacant_position_count / position_count; 0 bila tanpa jabatan aktif",
+      "role": "model",
+      "reference": "PRD §81"
+    },
+    "avg_realization_per_position": {
+      "formula": "realization / position_count; 0 bila tanpa jabatan aktif",
+      "role": "display (+ model set R)",
+      "reference": "PRD §11; D-002; D-020"
+    },
+    "unbudgeted_filled_count": {
+      "formula": "jabatan FTK = 0 & realisasi > 0",
+      "role": "display",
+      "reference": "D-003"
+    },
+    "marked_position_count": {
+      "formula": "jabatan bertanda *)",
+      "role": "display",
+      "reference": "D-005"
+    },
+    "extreme_position_count": {
+      "formula": "jabatan realisasi ekstrem",
+      "role": "display",
+      "reference": "D-006"
+    },
+    "pct_<GRUP>": {
+      "formula": "proporsi jabatan aktif pada kelompok jenjang (7 kelompok PRD §12)",
+      "role": "display",
+      "reference": "PRD §12; D-016"
+    },
+    "pct_MA_MAK, pct_MM, pct_MD, pct_SPESIALIS": {
+      "formula": "proporsi jabatan aktif; MAK+MA digabung; GENERALIS = kategori referensi dan UNKNOWN tidak dipakai",
+      "role": "model (set C)",
+      "reference": "D-016, D-018, D-020"
+    },
+    "ftk_<GRUP>, real_<GRUP>": {
+      "formula": "Σ FTK / Σ realisasi per kelompok jenjang (komposisi tenaga kerja)",
+      "role": "display",
+      "reference": "PRD §12, §60; D-016"
+    },
+    "has_active_positions": {
+      "formula": "1 bila position_count > 0",
+      "role": "flag",
+      "reference": "D-017"
+    },
+    "in_model_population": {
+      "formula": "1 bila memiliki jabatan aktif dan bukan wadah virtual",
+      "role": "flag",
+      "reference": "D-017"
+    }
+  }
+}
